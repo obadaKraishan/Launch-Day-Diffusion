@@ -1,3 +1,140 @@
 hn_id,time_utc,title,url,resolved_url,score,descendants,is_show_hn,author
+45057322,2025-08-28T21:36:36+00:00,Expert LSP the official language server implementation for Elixir,https://github.com/elixir-lang/expert,https://github.com/elixir-lang/expert,83,12,False,pimienta
+45052950,2025-08-28T14:54:07+00:00,Show HN: MCPcat – A free open-source library for MCP server monitoring,https://github.com/MCPCat/mcpcat-typescript-sdk,https://github.com/MCPCat/mcpcat-typescript-sdk,13,3,True,kashishhora
 45052200,2025-08-28T13:51:51+00:00,Show HN: SwiftAI – open-source library to easily build LLM features on iOS/macOS,https://github.com/mi12labs/SwiftAI,https://github.com/mi12labs/SwiftAI,60,13,True,mi12-root
+45051542,2025-08-28T12:49:10+00:00,GPU Prefix Sums: A nearly complete collection,https://github.com/b0nes164/GPUPrefixSums,https://github.com/b0nes164/GPUPrefixSums,77,17,False,coffeeaddict1
+45051219,2025-08-28T12:14:15+00:00,The Trusted Agentic Commerce Protocol,https://github.com/forter/trusted-agentic-commerce-protocol,https://github.com/forter/trusted-agentic-commerce-protocol,17,1,False,oellenbogen
 45047572,2025-08-28T02:12:23+00:00,Bookmarks.txt is a concept of keeping URLs in plain text files,https://github.com/soulim/bookmarks.txt,https://github.com/soulim/bookmarks.txt,171,146,False,secwang
+45046547,2025-08-27T23:28:35+00:00,"Claude's GitHub: two issues closed by AI as ""duplicates"" – of each other..!",https://github.com/anthropics/claude-code/issues/4751,https://github.com/anthropics/claude-code/issues/4751,13,3,False,hihicoderhi
+45045116,2025-08-27T20:53:51+00:00,Show HN: Meetup.com and eventribe alternative to small groups,https://github.com/polaroi8d/cactoide,https://github.com/polaroi8d/cactoide,105,59,True,orbanlevi
+45041315,2025-08-27T15:50:54+00:00,VIM Master,https://github.com/renzorlive/vimmaster,https://github.com/renzorlive/vimmaster,357,115,False,Fluffyrnz
+45040875,2025-08-27T15:16:18+00:00,Efficient Array Programming,https://github.com/razetime/efficient-array-programming,https://github.com/razetime/efficient-array-programming,92,14,False,todsacerdoti
+45039978,2025-08-27T14:09:48+00:00,StackBench Is Now Open Source,https://github.com/NapthaAI/openstackbench,https://github.com/NapthaAI/openstackbench,10,6,False,richardblythman
+45037365,2025-08-27T09:43:43+00:00,The GitHub website is slow on Safari,https://github.com/orgs/community/discussions/170758,https://github.com/orgs/community/discussions/170758,435,339,False,talboren
+45034957,2025-08-27T02:54:07+00:00,Show HN: Regolith – Regex library that prevents ReDoS CVEs in TypeScript,https://github.com/JakeRoggenbuck/regolith,https://github.com/JakeRoggenbuck/regolith,27,25,True,roggenbuck
+45034496,2025-08-27T01:38:48+00:00,Malicious versions of Nx and some supporting plugins were published,https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c,https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c,432,425,False,longcat
+45025678,2025-08-26T12:36:20+00:00,Show HN: Sideko – Hybrid deterministic/LLM generator for API SDKs and docs,https://github.com/Sideko-Inc/sideko/tree/main/releases/determinism-plus-llms,https://github.com/Sideko-Inc/sideko/tree/main/releases/determinism-plus-llms,26,5,True,pmkelly4444
+45024338,2025-08-26T09:46:04+00:00,"Microsoft open weights VibeVoice TTS supports 90 minutes speech, 4 speakers",https://github.com/microsoft/VibeVoice,https://github.com/microsoft/VibeVoice,14,2,False,Terretta
+45022931,2025-08-26T06:24:30+00:00,Show HN: I integrated my from-scratch TCP/IP stack into the xv6-riscv OS,https://github.com/pandax381/xv6-riscv-net,https://github.com/pandax381/xv6-riscv-net,144,12,True,pandax381
+45021282,2025-08-26T01:35:34+00:00,Feat: Add 'Proof of React' Challenge,https://github.com/TecharoHQ/anubis/pull/1038,https://github.com/TecharoHQ/anubis/pull/1038,11,0,False,TheFreim
+45020457,2025-08-25T23:26:42+00:00,WiFi-3D-Fusion – Real-time 3D motion sensing with Wi-Fi,https://github.com/MaliosDark/wifi-3d-fusion,https://github.com/MaliosDark/wifi-3d-fusion,121,31,False,aerosol
+45019671,2025-08-25T22:05:34+00:00,iOS 18.6.1 0-click RCE POC,https://github.com/b1n4r1b01/n-days/blob/main/CVE-2025-43300.md,https://github.com/b1n4r1b01/n-days/blob/main/CVE-2025-43300.md,228,56,False,akyuu
+45018113,2025-08-25T19:44:01+00:00,Show HN: Gonzo – A Go-based TUI for log analysis (OpenTelemetry/OTLP support),https://github.com/control-theory/gonzo,https://github.com/control-theory/gonzo,72,15,True,J0nR
+45018081,2025-08-25T19:41:51+00:00,Fenster: Most minimal cross-platform GUI library,https://github.com/zserge/fenster,https://github.com/zserge/fenster,154,52,False,klaussilveira
+45017314,2025-08-25T18:37:15+00:00,"Show HN: Whisker, a real-time Pipecat debugger for your voice AI agents",https://github.com/pipecat-ai/whisker,https://github.com/pipecat-ai/whisker,11,3,True,aconchillo
+45015758,2025-08-25T16:39:42+00:00,Show HN: SecretMemoryLocker – File Encryption Without Static Passwords,https://github.com/SecretML/SecretMemoryLocker,https://github.com/SecretML/SecretMemoryLocker,14,3,True,YuriiDev
+45015281,2025-08-25T16:00:38+00:00,Show HN: Human-like RAG — no vectors,https://github.com/VectifyAI/PageIndex,https://github.com/VectifyAI/PageIndex,11,0,True,page_index
+45014911,2025-08-25T15:27:59+00:00,SDS: Simple Dynamic Strings library for C,https://github.com/antirez/sds,https://github.com/antirez/sds,111,43,False,klaussilveira
+45013572,2025-08-25T13:21:19+00:00,Show HN: Async – Claude code and Linear and GitHub PRs in one opinionated tool,https://github.com/bkdevs/async-server,https://github.com/bkdevs/async-server,105,43,True,wjsekfghks
+45012548,2025-08-25T11:05:38+00:00,Prediction-Encoded Pixels image format,https://github.com/ENDESGA/PEP,https://github.com/ENDESGA/PEP,53,11,False,msephton
+45012430,2025-08-25T10:43:50+00:00,Agent-C: a 4KB AI agent,https://github.com/bravenewxyz/agent-c,https://github.com/bravenewxyz/agent-c,108,84,False,liszper
+45011004,2025-08-25T06:48:34+00:00,Show HN: Spoon-Bending – a framework for analyzing GPT-5 alignment behavior,https://github.com/pablo-chacon/Spoon-Bending,https://github.com/pablo-chacon/Spoon-Bending,21,3,True,pablo-chacon
+45010524,2025-08-25T05:30:00+00:00,MCP Gateway and Registry,https://github.com/IBM/mcp-context-forge,https://github.com/IBM/mcp-context-forge,73,53,False,nikhilk218
+45010461,2025-08-25T05:17:44+00:00,Show HN: Timep – A next-gen profiler and flamegraph-generator for bash code,https://github.com/jkool702/timep,https://github.com/jkool702/timep,53,11,True,jkool702
+45009486,2025-08-25T01:52:34+00:00,Show HN: Decentralized Bitcoin Incentives via QR Codes,https://github.com/DT7QR/Bitcoin-Rewards-System-Proposal,https://github.com/DT7QR/Bitcoin-Rewards-System-Proposal,11,2,True,Yodan2025
+45008406,2025-08-24T22:31:22+00:00,Introducing: VuIO – open-source UPNP/DLNA server written in Rust,https://github.com/vuiodev/vuio,https://github.com/vuiodev/vuio,25,1,False,vyrti
+45008308,2025-08-24T22:20:07+00:00,GNU cross-tools: musl-cross 313.3M,https://github.com/cross-tools/musl-cross,https://github.com/cross-tools/musl-cross,34,17,False,1vuio0pswjnm7
+45007797,2025-08-24T21:08:26+00:00,Anubis_offload: Userscript to offload Anubis PoW to native CPU or GPU code,https://github.com/DavidBuchanan314/anubis_offload,https://github.com/DavidBuchanan314/anubis_offload,11,2,False,Bogdanp
+45007525,2025-08-24T20:34:49+00:00,Reverse Engineered Raspberry Pi Compute Module 5,https://github.com/schlae/cm5-reveng,https://github.com/schlae/cm5-reveng,88,23,False,_Microft
+45006686,2025-08-24T18:55:01+00:00,Show HN: FilterQL – A tiny query language for filtering structured data,https://github.com/adamhl8/filterql,https://github.com/adamhl8/filterql,76,21,True,genshii
+45005434,2025-08-24T16:18:53+00:00,We put a coding agent in a while loop,https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md,https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md,417,303,False,sfarshid
+45003420,2025-08-24T11:34:15+00:00,Show HN: Clearcam – Add AI object detection to your IP CCTV cameras,https://github.com/roryclear/clearcam,https://github.com/roryclear/clearcam,230,66,True,roryclear
+45003358,2025-08-24T11:24:40+00:00,Show HN: CasCache – multi-generational cache with optimistic concurrency control,https://github.com/unkn0wn-root/cascache,https://github.com/unkn0wn-root/cascache,20,2,True,unkn0wn_root
+45001979,2025-08-24T06:57:19+00:00,Seed: Interactive software environment based on Common Lisp,https://github.com/phantomics/seed,https://github.com/phantomics/seed,120,21,False,todsacerdoti
+45001466,2025-08-24T04:43:34+00:00,A lightweight TypeScript library for assertion-based runtime data validation,https://github.com/nimeshnayaju/decode-kit,https://github.com/nimeshnayaju/decode-kit,30,35,False,nayajunimesh
+45001371,2025-08-24T04:23:33+00:00,ThinkMesh: A Python lib for parallel thinking in LLMs,https://github.com/martianlantern/ThinkMesh,https://github.com/martianlantern/ThinkMesh,72,4,False,martianlantern
+45000982,2025-08-24T03:08:15+00:00,Show HN: Port Kill – A lightweight macOS status bar development port monitor,https://github.com/kagehq/port-kill,https://github.com/kagehq/port-kill,125,47,True,lexokoh
+45000400,2025-08-24T01:09:06+00:00,DeepCode: Open Agentic Coding,https://github.com/HKUDS/DeepCode,https://github.com/HKUDS/DeepCode,13,3,False,pykello
+44998316,2025-08-23T19:10:32+00:00,Optimizing FizzBuzz in Rust,https://github.com/nrposner/fizzcrate,https://github.com/nrposner/fizzcrate,30,16,False,Bogdanp
+44995189,2025-08-23T11:29:17+00:00,"Show HN: Create and share animated, interactive wallpapers with HTML/CSS/JS",https://github.com/underpig1/octos,https://github.com/underpig1/octos,11,2,True,underpig
+44995147,2025-08-23T11:22:15+00:00,"LunarEngine: An open source, Roblox-compatible game engine",https://github.com/lunarengine/lunar-test,https://github.com/lunarengine/lunar-test,279,98,False,dedicateddev
+44994535,2025-08-23T09:07:38+00:00,SpaCy: Industrial-Strength Natural Language Processing (NLP) in Python,https://github.com/explosion/spaCy,https://github.com/explosion/spaCy,132,62,False,marklit
+44994071,2025-08-23T07:35:49+00:00,Manim: Animation engine for explanatory math videos,https://github.com/3b1b/manim,https://github.com/3b1b/manim,427,68,False,pykello
+44993874,2025-08-23T06:53:22+00:00,DeepCode: Open Agentic Coding,https://github.com/HKUDS/DeepCode,https://github.com/HKUDS/DeepCode,18,2,False,balex
+44993761,2025-08-23T06:31:00+00:00,"Show HN: OctaneDB – Fast, Open-Source Vector Database for Python",https://github.com/RijinRaju/octanedb,https://github.com/RijinRaju/octanedb,33,12,True,rijin_r
+44993297,2025-08-23T04:57:44+00:00,Show HN: AgentState – Lightweight state manager for multi-agent AI workflows,https://github.com/ayushmi/agentstate,https://github.com/ayushmi/agentstate,15,0,True,boulevard
+44990680,2025-08-22T22:29:28+00:00,Glyn: Type-safe PubSub and Registry for Gleam actors with distributed clustering,https://github.com/mbuhot/glyn,https://github.com/mbuhot/glyn,75,11,False,TheWiggles
+44988529,2025-08-22T19:06:22+00:00,"Show HN: Any-LLM chat demo – switch between ChatGPT, Claude, Ollama, in one chat",https://github.com/mozilla-ai/any-llm/tree/main/demos/chat,https://github.com/mozilla-ai/any-llm/tree/main/demos/chat,10,0,True,AMeckes
+44988271,2025-08-22T18:47:30+00:00,Show HN: JavaScript-free (X)HTML Includes,https://github.com/Evidlo/xsl-website,https://github.com/Evidlo/xsl-website,210,114,True,Evidlo
+44987552,2025-08-22T17:56:12+00:00,Should the web platform adopt XSLT 3.0?,https://github.com/whatwg/html/issues/11578,https://github.com/whatwg/html/issues/11578,133,107,False,protomolecool
+44987346,2025-08-22T17:38:57+00:00,XSLT removal will break multiple government and regulatory sites,https://github.com/whatwg/html/issues/11582,https://github.com/whatwg/html/issues/11582,157,142,False,colejohnson66
+44987221,2025-08-22T17:27:00+00:00,"Show HN: BrowserOS -- browser agents with GPT-OSS, local llms",https://github.com/browseros-ai/BrowserOS,https://github.com/browseros-ai/BrowserOS,12,2,True,felarof
+44986914,2025-08-22T17:00:35+00:00,Bubbletea-rs: a Rust implementation of Bubbletea,https://github.com/whit3rabbit/bubbletea-rs,https://github.com/whit3rabbit/bubbletea-rs,18,3,False,jasonjmcghee
+44986205,2025-08-22T16:03:26+00:00,Show HN: Clyp – Clipboard Manager for Linux,https://github.com/murat-cileli/clyp,https://github.com/murat-cileli/clyp,79,48,True,timeoperator
+44985058,2025-08-22T14:22:45+00:00,Show HN: Lacquer – GitHub Actions for AI workflows in a single Go binary,https://github.com/lacquerai/lacquer,https://github.com/lacquerai/lacquer,11,1,True,hugorut
+44984675,2025-08-22T13:49:06+00:00,Show HN: AIMless – a 10 KB single file P2P chat app with zero dependencies,https://github.com/ImZackAdams/AIMless,https://github.com/ImZackAdams/AIMless,13,5,True,NyxBNC
+44983835,2025-08-22T12:38:47+00:00,Electrical Grid Mapping,https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping,https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping,10,0,False,protontypes
+44982748,2025-08-22T10:14:59+00:00,"Fmllm: 4mb training data, 100mb model, Fibonacci embeddings, near-coherent. WTF?",https://github.com/henrygabriels/FMLLM/blob/main/README.md,https://github.com/henrygabriels/FMLLM/blob/main/README.md,37,27,False,gabriel666smith
+44981989,2025-08-22T07:57:57+00:00,Show HN: FeOx – Fast embedded KV store in Rust,https://github.com/mehrantsi/FeOxDB,https://github.com/mehrantsi/FeOxDB,37,8,True,mehrant
+44980042,2025-08-22T01:06:56+00:00,OS Yamato lets your data fade away,https://github.com/osyamato/os-yamato,https://github.com/osyamato/os-yamato,25,35,False,tsuyoshi_k
+44977960,2025-08-21T20:54:34+00:00,Open Source Maintenance Fee,https://github.com/wixtoolset,https://github.com/wixtoolset,10,7,False,nilsbunger
+44976568,2025-08-21T18:49:57+00:00,AI tooling must be disclosed for contributions,https://github.com/ghostty-org/ghostty/pull/8289,https://github.com/ghostty-org/ghostty/pull/8289,724,461,False,freetonik
+44975562,2025-08-21T17:27:43+00:00,Show HN: mcpd – manage MCP servers with a single config file,https://github.com/mozilla-ai/mcpd,https://github.com/mozilla-ai/mcpd,14,1,True,AMeckes
+44972255,2025-08-21T13:02:22+00:00,Show HN: Claudable – OpenSource Lovable that runs locally with Claude Code,https://github.com/opactorai/Claudable,https://github.com/opactorai/Claudable,38,10,True,aaronSong
+44969622,2025-08-21T06:20:11+00:00,Show HN: I replaced vector databases with Git for AI memory (PoC),https://github.com/Growth-Kinetics/DiffMem,https://github.com/Growth-Kinetics/DiffMem,198,45,True,alexmrv
+44967505,2025-08-20T23:15:55+00:00,SimpleIDE,https://github.com/jamesplotts/simpleide,https://github.com/jamesplotts/simpleide,100,54,False,impendingchange
+44966940,2025-08-20T21:56:49+00:00,Render any Git repo into a single static HTML page for humans or LLMs,https://github.com/karpathy/rendergit,https://github.com/karpathy/rendergit,20,0,False,tortilla
+44966170,2025-08-20T20:37:58+00:00,Show HN: PlutoPrint – Generate PDFs and PNGs from HTML with Python,https://github.com/plutoprint/plutoprint,https://github.com/plutoprint/plutoprint,161,48,True,sammycage
+44965229,2025-08-20T19:12:58+00:00,Qclojure: Functional quantum computer programming library for Clojure,https://github.com/lsolbach/qclojure,https://github.com/lsolbach/qclojure,20,0,False,simonpure
+44964916,2025-08-20T18:47:03+00:00,Zedless: Zed fork focused on privacy and being local-first,https://github.com/zedless-editor/zed,https://github.com/zedless-editor/zed,555,322,False,homebrewer
+44964332,2025-08-20T17:54:22+00:00,Show HN: Bizcardz.ai – Custom metal business cards,https://github.com/rhodey/bizcardz.ai,https://github.com/rhodey/bizcardz.ai,26,32,True,rhodey
+44963724,2025-08-20T17:04:51+00:00,An Update on Pytype,https://github.com/google/pytype,https://github.com/google/pytype,199,66,False,mxmlnkn
+44963324,2025-08-20T16:22:59+00:00,Show HN: Okapi – a metrics engine based on open data formats,https://github.com/okapi-core/okapi,https://github.com/okapi-core/okapi,14,5,True,kushal2048
+44963135,2025-08-20T16:01:13+00:00,"Show HN: Luminal – Open-source, search-based GPU compiler",https://github.com/luminal-ai/luminal,https://github.com/luminal-ai/luminal,152,60,True,jafioti
+44962059,2025-08-20T14:01:26+00:00,Gemma 3 270M re-implemented in pure PyTorch for local tinkering,https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/12_gemma3,https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/12_gemma3,415,57,False,ModelForge
+44961890,2025-08-20T13:44:08+00:00,Show HN: Web MCP Free Tier – Web Access for Agents Without Getting Blocked,https://github.com/brightdata/brightdata-mcp,https://github.com/brightdata/brightdata-mcp,11,1,True,meirk-brd
+44960594,2025-08-20T10:32:12+00:00,Show HN: Project management system for Claude Code,https://github.com/automazeio/ccpm,https://github.com/automazeio/ccpm,174,112,True,aroussi
+44958543,2025-08-20T04:04:20+00:00,Show HN: Hanaco Weather – A poetic weather SNS from the OS Yamato project,https://github.com/osyamato/os-yamato,https://github.com/osyamato/os-yamato,18,8,True,tsuyoshi_k
+44957291,2025-08-19T23:41:35+00:00,Show HN: Rucat – Cat for Prompt Engineers,https://github.com/brianredbeard/rucat,https://github.com/brianredbeard/rucat,10,1,True,thebeardisred
+44956899,2025-08-19T22:37:56+00:00,AI tooling must be disclosed for contributions,https://github.com/ghostty-org/ghostty/pull/8289,https://github.com/ghostty-org/ghostty/pull/8289,11,3,False,robteix
+44956002,2025-08-19T20:34:36+00:00,"Docker container for running Claude Code in ""dangerously skip permissions"" mode",https://github.com/tintinweb/claude-code-container,https://github.com/tintinweb/claude-code-container,32,12,False,Luc
+44955576,2025-08-19T19:48:38+00:00,Show HN: OpenAI/reflect – Physical AI Assistant that illuminates your life,https://github.com/openai/openai-reflect,https://github.com/openai/openai-reflect,92,52,True,Sean-Der
+44955424,2025-08-19T19:35:16+00:00,Show HN: Lemonade: Run LLMs Locally with GPU and NPU Acceleration,https://github.com/lemonade-sdk/lemonade,https://github.com/lemonade-sdk/lemonade,15,0,True,ramkrishna2910
+44955159,2025-08-19T19:12:50+00:00,ArduinoOS (2017),https://github.com/DrBubble/ArduinoOS,https://github.com/DrBubble/ArduinoOS,58,5,False,dcminter
+44953615,2025-08-19T16:52:34+00:00,"Show HN: Tambo Add A Cursor style assistant for React apps (OSS, self-hosted)",https://github.com/tambo-ai/tambo,https://github.com/tambo-ai/tambo,11,16,True,grouchy
+44953395,2025-08-19T16:29:45+00:00,Show HN: Built a memory layer that stops AI agents from forgetting everything,https://github.com/pi22by7/In-Memoria,https://github.com/pi22by7/In-Memoria,13,0,True,pi_22by7
+44952185,2025-08-19T14:48:54+00:00,"""Remove mentions of XSLT from the html spec""",https://github.com/whatwg/html/pull/11563,https://github.com/whatwg/html/pull/11563,388,534,False,troupo
+44951200,2025-08-19T13:20:37+00:00,Show HN: I've made an easy to extend and flexible JavaScript logger,https://github.com/inshinrei/halua,https://github.com/inshinrei/halua,17,9,True,inshinrei
+44949617,2025-08-19T08:53:23+00:00,Intel 80286 emulator for Raspberry Pico,https://github.com/xrip/pico-286,https://github.com/xrip/pico-286,31,40,False,fleeks
+44946996,2025-08-19T00:35:08+00:00,OpenMower – An open source lawn mower,https://github.com/ClemensElflein/OpenMower,https://github.com/ClemensElflein/OpenMower,609,190,False,rickcarlino
+44945113,2025-08-18T20:43:13+00:00,Show HN: Strix - Open-source AI hackers for your apps,https://github.com/usestrix/strix,https://github.com/usestrix/strix,102,15,True,ahmedallam2
+44945008,2025-08-18T20:34:37+00:00,"Tiny-tpu: A minimal tensor processing unit (TPU), inspired by Google's TPU",https://github.com/tiny-tpu-v2/tiny-tpu,https://github.com/tiny-tpu-v2/tiny-tpu,271,17,False,admp
+44944787,2025-08-18T20:13:38+00:00,A continuous stream of vintage computing artifacts from the Internet Archive,https://github.com/jgbrwn/retro-computing-stream,https://github.com/jgbrwn/retro-computing-stream,13,1,False,indigodaddy
+44942731,2025-08-18T16:52:29+00:00,"Show HN: Whispering – Open-source, local-first dictation you can trust",https://github.com/epicenter-so/epicenter/tree/main/apps/whispering,https://github.com/epicenter-so/epicenter/tree/main/apps/whispering,590,151,True,braden-w
+44941546,2025-08-18T15:13:39+00:00,Benchmarks for Golang SQLite Drivers,https://github.com/cvilsmeier/go-sqlite-bench,https://github.com/cvilsmeier/go-sqlite-bench,92,35,False,cvilsmeier
+44941043,2025-08-18T14:29:32+00:00,Show HN: Memori – Open-Source Memory Engine for AI Agents,https://github.com/GibsonAI/memori,https://github.com/GibsonAI/memori,17,11,True,Arindam1729
+44940974,2025-08-18T14:22:48+00:00,Show HN: A Minimal Hacker News Reader for Apple Watch Built with SwiftUI,https://github.com/wieslawsoltes/HackerNewsWatch,https://github.com/wieslawsoltes/HackerNewsWatch,62,20,True,wiso
+44940485,2025-08-18T13:39:53+00:00,FFmpeg Assembly Language Lessons,https://github.com/FFmpeg/asm-lessons,https://github.com/FFmpeg/asm-lessons,422,158,False,flykespice
+44940089,2025-08-18T12:57:28+00:00,Vibe coding tips and tricks,https://github.com/awslabs/mcp/blob/main/VIBE_CODING_TIPS_TRICKS.md,https://github.com/awslabs/mcp/blob/main/VIBE_CODING_TIPS_TRICKS.md,227,93,False,mooreds
+44939874,2025-08-18T12:34:43+00:00,"Show HN: Strudel Flow, a pattern sequencer built with Strudel and React Flow",https://github.com/xyflow/strudel-flow,https://github.com/xyflow/strudel-flow,37,8,True,moklick
+44939873,2025-08-18T12:34:36+00:00,Show HN: Typed-arrow – compile‑time Arrow schemas for Rust,https://github.com/tonbo-io/typed-arrow,https://github.com/tonbo-io/typed-arrow,48,8,True,ethegwo
+44939642,2025-08-18T11:56:03+00:00,Universal Tool Calling Protocol (UTCP),https://github.com/universal-tool-calling-protocol/python-utcp,https://github.com/universal-tool-calling-protocol/python-utcp,75,66,False,edweis
+44938718,2025-08-18T09:11:16+00:00,Fast and observable background job processing for .NET,https://github.com/mikasjp/BusyBee,https://github.com/mikasjp/BusyBee,82,25,False,mikasjp
+44938667,2025-08-18T09:00:53+00:00,Rails Charts Using ECharts from Apache,https://github.com/railsjazz/rails_charts,https://github.com/railsjazz/rails_charts,87,6,False,amalinovic
+44937978,2025-08-18T06:35:02+00:00,"EloqKV, a distributed database with Redis compatible API (GPLv2 and AGPLv3)",https://github.com/eloqdata/eloqkv,https://github.com/eloqdata/eloqkv,54,45,False,cloudsql
+44937346,2025-08-18T04:13:56+00:00,IMDB Terminal Browser,https://github.com/isene/IMDB,https://github.com/isene/IMDB,21,15,False,thunderbong
+44936333,2025-08-18T00:55:35+00:00,Mangle – a language for deductive database programming,https://github.com/google/mangle,https://github.com/google/mangle,103,19,False,simonpure
+44935821,2025-08-17T23:24:13+00:00,SQLite-HTTP-cache: SQLite Extension to cache HTTP requests,https://github.com/walterwanderley/sqlite-http-cache,https://github.com/walterwanderley/sqlite-http-cache,10,0,False,thunderbong
+44935169,2025-08-17T21:40:47+00:00,Llama-Scan: Convert PDFs to Text W Local LLMs,https://github.com/ngafar/llama-scan,https://github.com/ngafar/llama-scan,220,83,False,nawazgafar
+44934988,2025-08-17T21:12:26+00:00,Show HN: A iOS Native Bluesky App,https://github.com/0xatrilla/LiquidSky,https://github.com/0xatrilla/LiquidSky,20,12,True,acxtrilla
+44934518,2025-08-17T20:08:56+00:00,HN Search isn't ingesting new data since Friday,https://github.com/algolia/hn-search/issues/248,https://github.com/algolia/hn-search/issues/248,200,50,False,busymom0
+44934391,2025-08-17T19:52:03+00:00,Show HN: Doxx – Terminal .docx viewer inspired by Glow,https://github.com/bgreenwell/doxx,https://github.com/bgreenwell/doxx,261,72,True,w108bmg
+44933435,2025-08-17T17:50:55+00:00,iOS 18.5 Bluetooth Privacy Vulnerabilities,https://github.com/JGoyd/iOS-18.5-Bluetooth-Privacy-Vuln,https://github.com/JGoyd/iOS-18.5-Bluetooth-Privacy-Vuln,78,25,False,FluGameAce007
+44932624,2025-08-17T16:10:37+00:00,MS-DOS development resources,https://github.com/SuperIlu/DOSDevelResources/blob/main/README.md,https://github.com/SuperIlu/DOSDevelResources/blob/main/README.md,126,42,False,mariuz
+44931753,2025-08-17T14:21:08+00:00,Show HN: Chatbang – Access ChatGPT from the terminal without an API key,https://github.com/ahmedhosssam/chatbang,https://github.com/ahmedhosssam/chatbang,21,2,True,ahmedhosssam
+44928997,2025-08-17T05:00:40+00:00,Wan – Open-source alternative to VEO 3,https://github.com/Wan-Video/Wan2.2,https://github.com/Wan-Video/Wan2.2,220,38,False,modinfo
+44925853,2025-08-16T18:37:17+00:00,A Lisp in 99LOC,https://github.com/Robert-van-Engelen/tinylisp,https://github.com/Robert-van-Engelen/tinylisp,108,26,False,shikaan
+44925597,2025-08-16T18:00:33+00:00,Show HN: Lue – Terminal eBook Reader with Text-to-Speech,https://github.com/superstarryeyes/lue,https://github.com/superstarryeyes/lue,99,23,True,superstarryeyes
+44925333,2025-08-16T17:26:27+00:00,UWU – generate CLI commands without leaving the terminal,https://github.com/context-labs/uwu,https://github.com/context-labs/uwu,16,2,False,funfunfunction
+44922859,2025-08-16T12:45:18+00:00,Show HN: Code-snippets for developing eBPF Programs,https://github.com/h0x0er/ebpf-snippets,https://github.com/h0x0er/ebpf-snippets,12,2,True,forxtrot
+44922556,2025-08-16T12:10:30+00:00,PG Auto Upgrade – Docker (and K8s) container to auto upgrade your database,https://github.com/pgautoupgrade/docker-pgautoupgrade,https://github.com/pgautoupgrade/docker-pgautoupgrade,27,16,False,justinclift
+44921674,2025-08-16T09:22:34+00:00,DBCrust – A modern database CLI,https://github.com/clement-tourriere/dbcrust,https://github.com/clement-tourriere/dbcrust,28,19,False,kelem
+44921467,2025-08-16T08:43:19+00:00,Guile bindings for Sway window manager,https://github.com/ebeem/guile-swayer,https://github.com/ebeem/guile-swayer,77,9,False,ducktective
+44916908,2025-08-15T20:23:09+00:00,Deploy Production-Ready Kubernetes on Hetzner Cloud,https://github.com/hcloud-k8s/terraform-hcloud-kubernetes,https://github.com/hcloud-k8s/terraform-hcloud-kubernetes,18,1,False,SweetSoftPillow
+44915220,2025-08-15T17:39:02+00:00,Show HN: JMAP MCP – Email for your agents,https://github.com/wyattjoh/jmap-mcp,https://github.com/wyattjoh/jmap-mcp,55,11,True,wyattjoh
+44913930,2025-08-15T15:54:35+00:00,Show HN: A Provably Zero Trust VPN,https://github.com/vpdotnet/vpnetd-sgx,https://github.com/vpdotnet/vpnetd-sgx,10,2,True,rasengan
+44911653,2025-08-15T12:42:25+00:00,Libgit2 – The Git Linkable Library,https://github.com/libgit2/libgit2,https://github.com/libgit2/libgit2,11,1,False,tzury
+44911560,2025-08-15T12:31:54+00:00,Vaultwarden commit introduces SSO using OpenID Connect,https://github.com/dani-garcia/vaultwarden/pull/3899,https://github.com/dani-garcia/vaultwarden/pull/3899,186,98,False,speckx
+44910671,2025-08-15T10:35:59+00:00,Show HN: PgHook – Docker image that streams PostgreSQL row changes to webhooks,https://github.com/PgHookCom/PgHook,https://github.com/PgHookCom/PgHook,39,5,True,enadzan
+44909599,2025-08-15T07:37:13+00:00,Should we remove XSLT from the web platform?,https://github.com/whatwg/html/issues/11523,https://github.com/whatwg/html/issues/11523,73,96,False,edent
+44906985,2025-08-14T23:36:46+00:00,Nvidia Tilus: A Tile-Level GPU Kernel Programming Language,https://github.com/NVIDIA/tilus,https://github.com/NVIDIA/tilus,93,48,False,ashvardanian

@@ -1,5 +1,13 @@
 Total HN hits scanned (Algolia pages summed): 1000
-Kept (github.com & filters): 2
+Kept (github.com & filters): 139
 Top 10 by score:
--  171 : Bookmarks.txt is a concept of keeping URLs in plain text files ... (https://github.com/soulim/bookmarks.txt)
--   60 : Show HN: SwiftAI – open-source library to easily build LLM features on iOS/macOS ... (https://github.com/mi12labs/SwiftAI)
+-  724 : AI tooling must be disclosed for contributions ... (https://github.com/ghostty-org/ghostty/pull/8289)
+-  609 : OpenMower – An open source lawn mower ... (https://github.com/ClemensElflein/OpenMower)
+-  590 : Show HN: Whispering – Open-source, local-first dictation you can trust ... (https://github.com/epicenter-so/epicenter/tree/main/apps/whispering)
+-  555 : Zedless: Zed fork focused on privacy and being local-first ... (https://github.com/zedless-editor/zed)
+-  435 : The GitHub website is slow on Safari ... (https://github.com/orgs/community/discussions/170758)
+-  432 : Malicious versions of Nx and some supporting plugins were published ... (https://github.com/nrwl/nx/security/advisories/GHSA-cxm3-wv7p-598c)
+-  427 : Manim: Animation engine for explanatory math videos ... (https://github.com/3b1b/manim)
+-  422 : FFmpeg Assembly Language Lessons ... (https://github.com/FFmpeg/asm-lessons)
+-  417 : We put a coding agent in a while loop ... (https://github.com/repomirrorhq/repomirror/blob/main/repomirror.md)
+-  415 : Gemma 3 270M re-implemented in pure PyTorch for local tinkering ... (https://github.com/rasbt/LLMs-from-scratch/tree/main/ch05/12_gemma3)
