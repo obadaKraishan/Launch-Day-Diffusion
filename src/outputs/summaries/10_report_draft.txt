@@ -1,0 +1,26 @@
+Title: Launch-Day Diffusion: Hacker News → GitHub Stars for AI Tools
+
+Abstract (1–2 sentences): We build a reproducible pipeline aligning Hacker News launches with GitHub star dynamics for AI/LLM tools. Event-study curves show a large launch bump; simple models explain a meaningful share of short-term adoption, with time-of-day and pre-launch signals contributing.
+
+Data & Scope
+- HN→repo pairs analyzed: 138 total; 137 with valid GitHub time series.
+- Typical effects: Δ24h mean ≈ 121.0, Δ7d mean ≈ 288.4 stars (features table).
+- Share of Show HN posts: 42.03%
+
+Methods
+- Align each GitHub repo’s hourly star series to the HN post time and aggregate to daily windows (±7 days).
+- Labels: Δ24h, Δ48h, Δ7d; Features: HN score/comments, timing (hour/weekday), Show HN flag, repo metadata (age, license, topics), baseline stars.
+- Models: Elastic Net (interpretable) and Gradient Boosting (non-linear). Robust ablations with HC1 standard errors.
+
+Results
+- Event study (means): Δ24h=121.1, Δ48h=188.7, Δ7d=288.5 stars.
+- Show HN vs others (48h): coefficient -119.2 (p=0.389) with controls; unadjusted means are higher for non-Show posts.
+- Weekend vs weekday (48h): +10.2 (p=0.813) — negligible.
+- Post hour: unadjusted spread across bins ≈ 200 stars; timing matters.
+
+Limitations
+- Some metadata are observed post-launch (e.g., current forks/watchers). We avoid leakage in ablations by excluding day-0 stars and can also report strict pre-launch variants.
+- Observational design; results are associations, not causal effects.
+
+Reproducibility
+- All scripts are single-file CLI, save raw JSONL/CSV and TXT summaries, and run end-to-end on public APIs.
