@@ -1,0 +1,80 @@
+== Target: delta_24h ==
+Train=109  Test=28
+ElasticNet  MAE=0.02  RMSE=0.03  R2=1.000  (alpha=0.0010, l1_ratio=0.90)
+GradBoost   MAE=1.57   RMSE=3.39   R2=0.997
+ElasticNet top-10 |coef|:
+  - num__launch_day_stars: 220.3035
+  - num__watchers: 0.0349
+  - num__forks: 0.0289
+  - num__hn_score: 0.0268
+  - num__stars_now: 0.0255
+  - num__baseline_stars: 0.0248
+  - num__repo_age_days: 0.0183
+  - num__open_issues: 0.0108
+  - cat__owner_type_User: 0.0069
+  - num__hn_comments: 0.0066
+GradBoost top-10 permutation importance:
+  - num__launch_day_stars: 1.8842
+  - num__title_len: 0.0000
+  - num__post_weekday: 0.0000
+  - num__post_hour_utc: 0.0000
+  - bool__has_numbers: 0.0000
+  - num__readme_len: 0.0000
+  - num__hn_comments: 0.0000
+  - cat__license_spdx_AGPL-3.0: 0.0000
+  - num__hn_score: 0.0000
+  - bool__topics_has_diffusion: 0.0000
+
+== Target: delta_48h ==
+Train=109  Test=28
+ElasticNet  MAE=114.41  RMSE=163.11  R2=-0.715  (alpha=0.1274, l1_ratio=0.50)
+GradBoost   MAE=30.45   RMSE=60.14   R2=0.767
+ElasticNet top-10 |coef|:
+  - num__launch_day_stars: 422.6789
+  - num__hn_score: 138.8395
+  - bool__has_numbers: 81.9824
+  - bool__is_show_hn: 58.1486
+  - num__stars_now: 47.6979
+  - num__baseline_stars: 44.1382
+  - num__post_hour_utc: 36.0248
+  - cat__owner_type_Organization: 34.1185
+  - cat__owner_type_User: 34.1182
+  - num__forks: 28.6989
+GradBoost top-10 permutation importance:
+  - num__launch_day_stars: 0.9319
+  - num__stars_now: 0.0672
+  - num__readme_len: 0.0538
+  - num__forks: 0.0362
+  - num__repo_age_days: 0.0324
+  - num__open_issues: 0.0094
+  - num__title_len: 0.0086
+  - num__hn_score: 0.0024
+  - cat__license_spdx_MIT: 0.0009
+  - num__post_weekday: 0.0002
+
+== Target: delta_168h ==
+Train=109  Test=28
+ElasticNet  MAE=238.88  RMSE=381.50  R2=-1.303  (alpha=0.0379, l1_ratio=0.70)
+GradBoost   MAE=92.50   RMSE=182.04   R2=0.476
+ElasticNet top-10 |coef|:
+  - num__launch_day_stars: 695.7393
+  - num__hn_score: 355.1242
+  - num__baseline_stars: 209.5905
+  - num__stars_now: 202.1631
+  - bool__is_weekend_post: 162.4565
+  - num__forks: 147.7965
+  - bool__topics_has_agent: 128.6746
+  - num__hn_comments: 109.3475
+  - cat__license_spdx_Unlicense: 85.6629
+  - num__repo_age_days: 75.0882
+GradBoost top-10 permutation importance:
+  - num__launch_day_stars: 0.4886
+  - num__stars_now: 0.1116
+  - num__readme_len: 0.0482
+  - num__forks: 0.0330
+  - num__open_issues: 0.0140
+  - num__repo_age_days: 0.0094
+  - num__baseline_stars: 0.0021
+  - cat__owner_type_User: 0.0008
+  - bool__has_releases: 0.0008
+  - cat__license_spdx_Apache-2.0: 0.0007

@@ -11,7 +11,7 @@ Outputs:
   - outputs/figures/08_enet_coefficients_*.png
   - outputs/figures/08_gb_permutation_importance_*.png
 """
-import os, sys, argparse, json
+import os, sys, argparse
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -37,7 +37,7 @@ def ensure_dirs():
     os.makedirs("data/processed", exist_ok=True)
 
 def make_ohe():
-    """Return an OneHotEncoder that works across sklearn versions."""
+    """Return OneHotEncoder that works across sklearn versions."""
     try:
         # sklearn >= 1.2
         return OneHotEncoder(handle_unknown="ignore", sparse_output=False)
@@ -63,17 +63,11 @@ def pick_columns(df):
     return cat_cols, bool_cols, num_cols, X_cols
 
 def build_preprocessor(cat_cols, bool_cols, num_cols):
-    cat = Pipeline([
-        ("imp", SimpleImputer(strategy="most_frequent")),
-        ("oh",  make_ohe())
-    ])
-    booleans = Pipeline([
-        ("imp", SimpleImputer(strategy="most_frequent"))
-    ])
-    nums = Pipeline([
-        ("imp", SimpleImputer(strategy="median")),
-        ("sc",  StandardScaler())
-    ])
+    cat = Pipeline([("imp", SimpleImputer(strategy="most_frequent")),
+                    ("oh",  make_ohe())])
+    booleans = Pipeline([("imp", SimpleImputer(strategy="most_frequent"))])
+    nums = Pipeline([("imp", SimpleImputer(strategy="median")),
+                     ("sc",  StandardScaler())])
     pre = ColumnTransformer([
         ("cat",  cat,      cat_cols),
         ("bool", booleans, bool_cols),
@@ -81,9 +75,14 @@ def build_preprocessor(cat_cols, bool_cols, num_cols):
     ], remainder="drop")
     return pre
 
+# ----- version-safe metrics -----
 def metrics(y_true, y_pred):
     mae = mean_absolute_error(y_true, y_pred)
-    rmse = mean_squared_error(y_true, y_pred, squared=False)
+    # Some sklearn versions don't support squared=False:
+    try:
+        rmse = mean_squared_error(y_true, y_pred, squared=False)
+    except TypeError:
+        rmse = float(np.sqrt(mean_squared_error(y_true, y_pred)))
     r2 = r2_score(y_true, y_pred)
     return mae, rmse, r2
 
@@ -95,6 +94,34 @@ def plot_top(series, title, out_png, top_k=20):
     plt.tight_layout()
     plt.savefig(out_png, dpi=150)
     plt.close()
+
+def safe_feature_names(fitted_pre):
+    """Get feature names from a fitted ColumnTransformer across sklearn versions."""
+    try:
+        return fitted_pre.get_feature_names_out()
+    except Exception:
+        names = []
+        for name, trans, cols in getattr(fitted_pre, "transformers_", []):
+            if name == "remainder":
+                continue
+            est = trans
+            if hasattr(trans, "named_steps"):  # it's a Pipeline
+                # Try to find the OneHotEncoder step
+                ohe = trans.named_steps.get("oh")
+                if ohe is not None:
+                    try:
+                        nms = ohe.get_feature_names_out(cols)
+                    except Exception:
+                        nms = ohe.get_feature_names(cols)
+                    names.extend([str(n) for n in nms])
+                else:
+                    # boolean/num pipelines -> raw col names
+                    if isinstance(cols, (list, tuple, np.ndarray)):
+                        names.extend([str(c) for c in cols])
+            else:
+                if isinstance(cols, (list, tuple, np.ndarray)):
+                    names.extend([str(c) for c in cols])
+        return np.array(names, dtype=object)
 
 def model_one_target(df, target_col, random_state=42):
     d = df[df[target_col].notna()].copy()
@@ -119,7 +146,6 @@ def model_one_target(df, target_col, random_state=42):
                              alphas=np.logspace(-3,2,20),
                              cv=5, max_iter=5000, random_state=random_state))
     ])
-
     gbr = Pipeline([
         ("pre", pre),
         ("mdl", GradientBoostingRegressor(random_state=random_state))
@@ -129,30 +155,44 @@ def model_one_target(df, target_col, random_state=42):
         X, y, ids, test_size=0.2, random_state=random_state
     )
 
+    # Fit
     enet.fit(X_train, y_train)
     gbr.fit(X_train, y_train)
 
+    # Predictions and metrics (pipeline-level)
     pred_enet = enet.predict(X_test)
     pred_gbr  = gbr.predict(X_test)
-
     m_enet = metrics(y_test, pred_enet)
     m_gbr  = metrics(y_test, pred_gbr)
 
-    feat_names = enet.named_steps["pre"].get_feature_names_out()
+    # ===== Feature names (after preprocessing) =====
+    pre_fitted = enet.named_steps["pre"]          # same fitted preprocessor as in gbr
+    feat_names = safe_feature_names(pre_fitted)   # handles sklearn version differences
 
+    # ===== Elastic Net coefficients (already on transformed features) =====
     coef = pd.Series(enet.named_steps["mdl"].coef_, index=feat_names)
     coef_abs = coef.abs().sort_values(ascending=False)
 
-    pi = permutation_importance(
-        gbr, X_test, y_test, n_repeats=10, random_state=random_state, n_jobs=-1
-    )
+    # ===== Permutation importance on the TRANSFORMED matrix =====
+    # Transform X_test once using the fitted preprocessor, then run PI on the raw regressor.
+    Xt_test = pre_fitted.transform(X_test)
+    gb_reg  = gbr.named_steps["mdl"]
+    try:
+        pi = permutation_importance(gb_reg, Xt_test, y_test,
+                                    n_repeats=10, random_state=random_state, n_jobs=-1)
+    except TypeError:
+        # older sklearn without n_jobs
+        pi = permutation_importance(gb_reg, Xt_test, y_test,
+                                    n_repeats=10, random_state=random_state)
     imp = pd.Series(pi.importances_mean, index=feat_names).sort_values(ascending=False)
 
+    # Plots
     plot_top(coef_abs, f"Elastic Net | {target_col} | |coef| (top 20)",
-             FIG_COEF.replace(".png", f"_{target_col}.png"))
+             FIG_COEF.replace('.png', f'_{target_col}.png'))
     plot_top(imp, f"GradBoost | {target_col} | Permutation importance (top 20)",
-             FIG_IMP.replace(".png", f"_{target_col}.png"))
+             FIG_IMP.replace('.png', f'_{target_col}.png'))
 
+    # Predictions table
     preds = ids_test.copy()
     preds[f"{target_col}_true"] = y_test.values
     preds[f"{target_col}_enet"] = pred_enet
@@ -163,8 +203,8 @@ def model_one_target(df, target_col, random_state=42):
         "n_train": int(len(X_train)),
         "n_test": int(len(X_test)),
         "enet": {"MAE": m_enet[0], "RMSE": m_enet[1], "R2": m_enet[2],
-                 "best_alpha": float(enet.named_steps["mdl"].alpha_),
-                 "best_l1_ratio": float(enet.named_steps["mdl"].l1_ratio_)},
+                 "best_alpha": float(enet.named_steps['mdl'].alpha_),
+                 "best_l1_ratio": float(enet.named_steps['mdl'].l1_ratio_)},
         "gbr":  {"MAE": m_gbr[0],  "RMSE": m_gbr[1],  "R2": m_gbr[2]},
         "enet_top10": coef_abs.head(10).to_dict(),
         "gbr_top10":  imp.head(10).to_dict()
@@ -201,8 +241,9 @@ def main():
         out = all_preds[0]
         for p in all_preds[1:]:
             out = out.merge(p, on=[c for c in ["hn_id","owner","repo"] if c in out.columns], how="outer")
-        out.to_csv(args.out_pred_csv, index=False)
+        out.to_csv(PRED_CSV, index=False)
 
+    # summary text
     lines = []
     for s in summaries:
         lines.append(f"== Target: {s['target']} ==")
@@ -216,11 +257,11 @@ def main():
         for k,v in list(s["gbr_top10"].items()):
             lines.append(f"  - {k}: {v:.4f}")
         lines.append("")
-    with open(args.summary_txt, "w", encoding="utf-8") as f:
+    with open(SUMMARY_TXT, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
-    print(f"Wrote predictions to {args.out_pred_csv}")
-    print(f"Wrote summary to {args.summary_txt}")
+    print(f"Wrote predictions to {PRED_CSV}")
+    print(f"Wrote summary to {SUMMARY_TXT}")
     print("Saved coefficient and importance plots to outputs/figures/")
 
 if __name__ == "__main__":
