@@ -1,0 +1,7 @@
+requests
+pandas
+python-dateutil
+dateparser
+PyGithub
+python-dotenv
+tqdm
