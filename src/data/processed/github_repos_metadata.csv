@@ -1,0 +1,132 @@
+owner,repo,owner_type,created_at,pushed_at,license_spdx,default_branch,stars_now,forks,open_issues,watchers,topics_json,readme_len,has_releases
+elixir-lang,expert,Organization,2024-09-18T13:26:43Z,2025-08-29T03:47:49Z,Apache-2.0,main,420,7,12,11,"[""elixir"", ""language-server-protocol"", ""lsp""]",1980,True
+mcpcat,mcpcat-typescript-sdk,Organization,2025-05-29T18:36:23Z,2025-08-28T14:27:15Z,MIT,main,46,2,1,2,"[""agent-runtime"", ""agents"", ""ai"", ""ai-agents"", ""ai-platform"", ""ai-tools"", ""analytics"", ""debugging"", ""mcp"", ""mcp-server"", ""mcp-tools"", ""mcps"", ""observability""]",6234,False
+mi12labs,swiftai,Organization,2025-08-13T20:42:56Z,2025-08-28T22:21:03Z,MIT,main,95,5,2,2,[],9120,True
+b0nes164,gpuprefixsums,User,2023-03-13T03:00:30Z,2025-01-29T03:46:13Z,NOASSERTION,main,221,9,2,5,"[""gpgpu"", ""hlsl"", ""unity"", ""chained-scan-with-decoupled-lookback"", ""exclusive-prefix-sum"", ""inclusive-prefix-sum"", ""compute-shaders"", ""cuda"", ""d3d12""]",9469,False
+forter,trusted-agentic-commerce-protocol,Organization,2025-08-21T14:54:37Z,2025-08-28T12:59:27Z,MIT,main,125,1,0,2,[],5983,False
+soulim,bookmarks.txt,User,2024-01-27T10:38:23Z,2024-01-29T09:42:24Z,MIT,main,151,3,0,4,"[""bookmarks"", ""bookmarks-txt""]",2128,False
+anthropics,claude-code,Organization,2025-02-22T17:41:21Z,2025-08-28T23:26:36Z,,main,31848,1901,2871,194,[],2413,False
+polaroi8d,cactoide,User,2025-08-27T06:35:14Z,2025-08-27T20:40:06Z,MIT,main,152,4,1,1,"[""events"", ""gathering"", ""group"", ""rsvp""]",2181,True
+renzorlive,vimmaster,User,2025-08-27T14:53:51Z,2025-08-28T12:18:22Z,MIT,main,869,36,5,5,"[""coding"", ""education"", ""game"", ""indie-game"", ""vim""]",5743,False
+razetime,efficient-array-programming,User,2021-06-14T03:21:24Z,2023-12-18T09:39:06Z,,main,67,0,0,4,[],1132,False
+napthaai,openstackbench,Organization,2025-08-21T03:13:31Z,2025-08-28T01:29:44Z,,main,15,1,0,1,[],15132,False
+jakeroggenbuck,regolith,User,2025-06-16T23:52:54Z,2025-08-28T02:25:28Z,MIT,main,61,3,16,0,"[""javascript"", ""regex"", ""security"", ""typescript""]",20438,True
+nrwl,nx,Organization,2017-08-11T18:50:23Z,2025-08-29T02:17:35Z,MIT,master,26825,2583,688,171,"[""nx"", ""angular"", ""react"", ""monorepo"", ""nodejs"", ""cypress"", ""storybook"", ""nextjs"", ""nx-workspaces"", ""hacktoberfest"", ""build-tool"", ""build-system"", ""cli"", ""javascript"", ""typescript"", ""building-tool"", ""build""]",9227,True
+sideko-inc,sideko,Organization,2023-10-03T14:04:44Z,2025-08-26T13:54:19Z,NOASSERTION,main,82,3,0,5,"[""api"", ""documentation"", ""openapi"", ""openapi-spec"", ""openapi3"", ""rest-api"", ""sdk"", ""api-client"", ""openapi-generator"", ""openapi-specification"", ""swagger"", ""swagger-api"", ""swagger-codegen"", ""swagger-documentation""]",2141,True
+microsoft,vibevoice,Organization,2025-08-25T13:24:01Z,2025-08-29T01:40:54Z,MIT,main,5354,430,24,45,[],10526,False
+pandax381,xv6-riscv-net,User,2025-07-17T08:59:04Z,2025-08-22T08:15:07Z,NOASSERTION,networking,77,3,0,1,[],3110,False
+techarohq,anubis,Organization,2025-03-17T17:35:28Z,2025-08-28T14:28:25Z,MIT,main,12292,340,194,36,"[""defense"", ""security""]",4755,True
+maliosdark,wifi-3d-fusion,User,2025-08-19T22:22:13Z,2025-08-26T21:22:46Z,NOASSERTION,main,380,18,0,2,[],34478,True
+b1n4r1b01,n-days,User,2021-06-27T13:12:57Z,2025-08-22T22:09:29Z,,main,402,62,0,26,[],2709,False
+control-theory,gonzo,Organization,2025-08-18T18:21:51Z,2025-08-27T21:51:06Z,MIT,main,457,9,7,5,"[""ai"", ""golang"", ""logs"", ""ollama"", ""openai"", ""opentelemetry"", ""otel"", ""otlp"", ""terminal"", ""tui""]",19745,True
+zserge,fenster,User,2023-01-13T15:06:25Z,2024-09-15T20:08:31Z,MIT,main,1315,70,22,23,[],3381,False
+pipecat-ai,whisker,Organization,2025-08-14T20:14:49Z,2025-08-26T23:58:38Z,BSD-2-Clause,main,46,4,0,0,[],2281,True
+secretml,secretmemorylocker,User,2025-07-09T09:16:53Z,2025-08-19T16:38:25Z,MIT,main,12,0,1,0,[],12120,True
+vectifyai,pageindex,Organization,2025-04-01T10:53:54Z,2025-08-28T11:38:11Z,MIT,main,1296,118,14,13,"[""ai"", ""llm"", ""rag"", ""reasoning"", ""retrieval""]",8733,False
+antirez,sds,User,2014-02-06T14:58:09Z,2025-04-18T10:59:31Z,BSD-2-Clause,master,5252,493,106,140,[],32055,False
+bkdevs,async-server,Organization,2025-08-22T21:36:56Z,2025-08-25T03:37:59Z,MIT,main,314,19,4,4,[],7203,False
+endesga,pep,User,2025-08-24T23:35:04Z,2025-08-28T18:16:19Z,CC0-1.0,main,313,9,1,4,"[""c"", ""compression"", ""image-compression"", ""pixel-art"", ""single-header""]",6276,False
+bravenewxyz,agent-c,Organization,2025-08-25T09:50:48Z,2025-08-26T19:53:10Z,,main,314,19,0,1,"[""agent"", ""ai-agent"", ""openrouter""]",994,False
+pablo-chacon,spoon-bending,User,2025-08-23T13:47:47Z,2025-08-23T14:26:29Z,NOASSERTION,main,19,1,0,0,[],6224,False
+ibm,mcp-context-forge,Organization,2025-05-08T08:16:59Z,2025-08-28T16:39:19Z,Apache-2.0,main,2135,243,161,26,"[""agents"", ""ai"", ""api-gateway"", ""asyncio"", ""authentication-middleware"", ""devops"", ""docker"", ""fastapi"", ""federation"", ""gateway"", ""generative-ai"", ""jwt"", ""kubernetes"", ""llm-agents"", ""mcp"", ""model-context-protocol"", ""observability"", ""prompt-engineering"", ""python"", ""tools""]",104122,True
+jkool702,timep,User,2025-07-09T14:15:10Z,2025-08-28T14:45:43Z,MIT,main,168,2,0,2,"[""bash"", ""novel"", ""profile"", ""timing"", ""flamegraph"", ""performance"", ""profiler""]",18767,False
+dt7qr,bitcoin-rewards-system-proposal,User,2025-08-25T00:55:57Z,2025-08-25T20:01:51Z,,main,3,0,0,1,[],9161,False
+vuiodev,vuio,Organization,2025-08-12T07:35:28Z,2025-08-29T01:20:23Z,Apache-2.0,main,85,0,4,0,"[""dlna"", ""dlna-server"", ""media-server"", ""open-source"", ""rust"", ""dlna-upnp"", ""docker"", ""media"", ""server"", ""arm64"", ""linux"", ""macos"", ""windows"", ""x64"", ""upnp""]",24986,True
+cross-tools,musl-cross,Organization,2024-03-17T11:56:22Z,2025-08-15T02:14:23Z,MIT,main,94,18,1,5,"[""cross-compiler"", ""multi-architecture"", ""musl-libc"", ""static-linking"", ""cross-toolchain""]",2624,True
+davidbuchanan314,anubis_offload,User,2025-08-24T13:53:38Z,2025-08-26T23:56:20Z,MIT,main,92,2,0,1,[],5027,False
+schlae,cm5-reveng,User,2025-08-24T19:47:22Z,2025-08-26T01:55:58Z,,main,177,12,1,1,[],9436,False
+adamhl8,filterql,User,2025-08-14T14:49:54Z,2025-08-28T23:12:31Z,MIT,main,196,0,0,1,"[""data"", ""filter"", ""filtering"", ""language"", ""query"", ""typescript"", ""filterql"", ""query-language""]",18167,True
+repomirrorhq,repomirror,Organization,2025-08-23T01:35:15Z,2025-08-25T16:04:13Z,,main,204,11,3,1,[],1092,False
+roryclear,clearcam,User,2025-01-04T19:32:55Z,2025-08-27T12:33:38Z,AGPL-3.0,main,366,9,0,1,"[""ipcamera"", ""object-detection"", ""tinygrad"", ""yolov8"", ""selfhosted"", ""machine-learning"", ""rtsp-server"", ""nvr"", ""ai""]",2534,True
+unkn0wn-root,cascache,User,2025-08-23T09:29:49Z,2025-08-28T21:20:23Z,NOASSERTION,main,43,0,0,1,"[""bigcache"", ""cache"", ""caching"", ""go"", ""golang"", ""redis"", ""ristretto""]",14403,True
+phantomics,seed,User,2017-10-12T00:18:31Z,2025-08-25T22:38:37Z,GPL-3.0,master,130,6,2,11,"[""common-lisp"", ""seed""]",6167,False
+nimeshnayaju,decode-kit,User,2025-08-21T17:22:34Z,2025-08-27T23:11:54Z,MIT,main,143,3,0,1,"[""typescript"", ""validation""]",8128,False
+martianlantern,thinkmesh,User,2025-08-24T03:21:57Z,2025-08-24T03:43:34Z,MIT,main,217,10,0,1,[],5865,False
+kagehq,port-kill,Organization,2025-08-24T02:58:20Z,2025-08-28T12:01:48Z,NOASSERTION,main,349,4,4,0,[],7220,False
+hkuds,deepcode,Organization,2025-05-14T05:23:02Z,2025-08-28T12:28:33Z,MIT,main,4410,450,14,48,"[""agentic-coding"", ""llm-agent""]",35113,True
+nrposner,fizzcrate,User,2025-08-23T18:54:11Z,2025-08-23T19:11:09Z,,main,16,0,2,0,[],16585,False
+underpig1,octos,User,2023-03-17T23:53:48Z,2025-08-24T03:07:00Z,MIT,master,584,8,4,6,"[""css"", ""desktop"", ""display"", ""engine"", ""graphics"", ""html"", ""wallpaper"", ""windows"", ""javascript"", ""octos""]",4070,True
+lunarengine,lunar-test,User,2025-08-23T10:35:44Z,2025-08-28T18:37:38Z,MIT,main,448,25,10,8,[],6972,True
+explosion,spacy,Organization,2014-07-03T15:15:40Z,2025-05-28T15:28:05Z,MIT,master,32361,4572,201,567,"[""natural-language-processing"", ""data-science"", ""machine-learning"", ""python"", ""cython"", ""nlp"", ""artificial-intelligence"", ""ai"", ""spacy"", ""nlp-library"", ""neural-network"", ""neural-networks"", ""deep-learning"", ""named-entity-recognition"", ""entity-linking"", ""text-classification"", ""tokenization""]",23776,True
+3b1b,manim,User,2015-03-22T18:50:58Z,2025-06-14T15:50:43Z,MIT,master,80212,6858,465,929,"[""python"", ""animation"", ""explanatory-math-videos"", ""3b1b-videos""]",6598,True
+rijinraju,octanedb,User,2025-08-20T17:48:22Z,2025-08-25T16:57:05Z,MIT,main,64,0,0,2,[],11324,False
+ayushmi,agentstate,User,2025-08-21T13:05:35Z,2025-08-25T16:23:45Z,Apache-2.0,main,47,0,27,1,"[""ai-agents"", ""change-data-capture"", ""database"", ""grpc"", ""persistence"", ""crdt"", ""grafana"", ""helm-chart"", ""kubernetes"", ""observability"", ""prometheus"", ""rust"", ""sdk"", ""vector-search""]",13893,True
+mbuhot,glyn,User,2025-08-09T03:06:26Z,2025-08-16T23:05:20Z,MIT,main,78,1,0,0,[],8185,False
+mozilla-ai,any-llm,Organization,2025-07-14T15:38:20Z,2025-08-29T00:09:39Z,Apache-2.0,main,946,67,45,8,"[""inference"", ""llm"", ""text-completion""]",6569,True
+evidlo,xsl-website,User,2021-02-03T01:00:46Z,2025-02-13T07:10:31Z,,master,89,5,0,1,[],629,False
+whatwg,html,Organization,2013-08-08T06:26:07Z,2025-08-28T13:29:28Z,NOASSERTION,main,8743,2968,2280,709,"[""whatwg"", ""html"", ""standard"", ""canvas"", ""storage"", ""eventsource"", ""workers"", ""html-standard""]",879,False
+browseros-ai,browseros,Organization,2025-05-18T16:23:54Z,2025-08-29T00:52:59Z,AGPL-3.0,main,3958,292,31,20,[],5461,True
+whit3rabbit,bubbletea-rs,User,2025-08-02T20:56:15Z,2025-08-18T23:44:33Z,MIT,main,173,0,1,1,[],6073,True
+murat-cileli,clyp,User,2025-08-14T22:19:59Z,2025-08-28T13:13:51Z,GPL-3.0,master,240,4,4,3,[],4291,True
+lacquerai,lacquer,Organization,2025-06-17T08:34:17Z,2025-08-22T13:36:25Z,Apache-2.0,main,18,0,1,1,"[""ai"", ""workflow-automation"", ""agent-workflow"", ""agentic-ai"", ""cli"", ""integrations"", ""workflow"", ""workflow-engine""]",11105,True
+imzackadams,aimless,User,2025-08-20T16:34:36Z,2025-08-27T16:28:47Z,,main,8,0,0,0,[],5883,False
+open-energy-transition,awesome-electrical-grid-mapping,Organization,2025-01-02T14:47:40Z,2025-08-27T22:09:37Z,CC0-1.0,main,76,5,11,7,"[""electrical-grid"", ""gridmap"", ""openstreetmap"", ""powergrid"", ""awesome"", ""renewable-energy""]",49678,False
+henrygabriels,fmllm,User,2025-08-13T07:14:28Z,2025-08-22T17:47:44Z,,main,12,0,0,0,[],8080,False
+mehrantsi,feoxdb,User,2025-08-19T13:21:16Z,2025-08-28T16:04:18Z,Apache-2.0,master,119,1,1,0,"[""cache"", ""database"", ""embedded"", ""iouring"", ""key-value"", ""low-latency"", ""performance"", ""rust""]",16204,True
+osyamato,os-yamato,User,2025-04-24T15:28:10Z,2025-08-28T06:18:53Z,NOASSERTION,main,25,0,0,1,[],4185,False
+ghostty-org,ghostty,Organization,2022-03-29T17:38:26Z,2025-08-29T00:08:00Z,MIT,main,34828,1020,192,177,[],8743,True
+mozilla-ai,mcpd,Organization,2025-05-28T11:23:01Z,2025-08-27T15:31:29Z,Apache-2.0,main,52,3,27,1,"[""daemon"", ""mcp"", ""ai"", ""cli"", ""declarative""]",6964,True
+opactorai,claudable,Organization,2025-08-20T05:15:16Z,2025-08-28T19:55:20Z,MIT,main,1310,189,11,13,[],9508,False
+growth-kinetics,diffmem,Organization,2025-08-20T14:35:47Z,2025-08-22T05:28:44Z,,main,551,30,1,12,[],7280,False
+jamesplotts,simpleide,User,2025-08-17T14:40:42Z,2025-08-27T20:35:46Z,,main,95,3,1,5,[],9580,False
+karpathy,rendergit,User,2025-08-20T03:25:28Z,2025-08-21T19:12:34Z,,master,1442,120,9,10,[],2066,False
+plutoprint,plutoprint,Organization,2024-05-04T17:00:47Z,2025-08-28T04:09:48Z,MIT,main,599,22,3,6,"[""css"", ""html"", ""pdf"", ""python"", ""svg"", ""pdf-generator"", ""html-to-image"", ""html-to-pdf"", ""image-generator"", ""plutobook""]",8939,True
+lsolbach,qclojure,User,2025-05-31T22:59:38Z,2025-08-28T22:45:30Z,EPL-1.0,main,25,0,0,1,[],7527,False
+zedless-editor,zed,Organization,2025-02-13T21:58:31Z,2025-08-13T00:36:12Z,NOASSERTION,main,1011,17,7,9,[],1977,True
+rhodey,bizcardz.ai,User,2024-08-03T21:41:28Z,2025-08-26T23:47:32Z,NOASSERTION,master,30,2,1,1,"[""ai"", ""kicad"", ""business"", ""cards""]",1656,False
+google,pytype,Organization,2015-03-18T20:52:08Z,2025-08-25T23:06:48Z,NOASSERTION,main,4991,290,2,54,"[""python"", ""typing"", ""typechecker"", ""linter"", ""types"", ""static-analysis"", ""static-code-analysis""]",1769,False
+okapi-core,okapi,User,2025-08-11T20:32:28Z,2025-08-20T05:52:05Z,Apache-2.0,main,10,0,0,0,[],8141,False
+luminal-ai,luminal,Organization,2023-07-18T22:02:51Z,2025-08-27T21:02:52Z,Apache-2.0,main,2396,144,29,23,[],7948,True
+rasbt,llms-from-scratch,User,2023-07-23T18:15:57Z,2025-08-28T23:36:43Z,NOASSERTION,main,67666,9538,3,608,"[""chatgpt"", ""gpt"", ""large-language-models"", ""llm"", ""python"", ""pytorch"", ""ai"", ""artificial-intelligence"", ""language-model"", ""transformer"", ""deep-learning"", ""machine-learning"", ""from-scratch""]",16619,False
+brightdata,brightdata-mcp,Organization,2025-04-15T10:55:56Z,2025-08-26T12:48:36Z,MIT,main,1158,155,7,8,"[""llm"", ""mcp"", ""modelcontextprotocol"", ""scraping"", ""ai-agents"", ""ai-integrations"", ""anti-bot-detection"", ""browser-automation"", ""data-collection"", ""data-extraction"", ""mcp-server"", ""scraping-tools"", ""structured-data"", ""web-crawling"", ""web-data"", ""web-scraping""]",12424,False
+automazeio,ccpm,Organization,2025-08-18T23:20:08Z,2025-08-28T15:23:43Z,MIT,main,3184,311,24,20,"[""ai-agents"", ""ai-coding"", ""claude"", ""claude-code"", ""project-management"", ""vibe-coding""]",16611,False
+brianredbeard,rucat,User,2025-08-14T09:03:37Z,2025-08-20T10:09:16Z,GPL-3.0,main,10,0,4,0,[],10594,True
+tintinweb,claude-code-container,User,2025-08-19T10:54:06Z,2025-08-19T19:27:31Z,,master,66,4,0,0,[],3795,False
+openai,openai-reflect,Organization,2025-07-29T14:18:13Z,2025-08-19T02:28:37Z,MIT,main,154,8,1,0,[],2754,False
+lemonade-sdk,lemonade,Organization,2025-05-15T19:17:39Z,2025-08-28T21:46:34Z,Apache-2.0,main,1138,83,69,11,"[""amd"", ""llama"", ""llm"", ""llm-inference"", ""llms"", ""local-server"", ""mistral"", ""npu"", ""onnxruntime"", ""qwen"", ""openai-api"", ""mcp"", ""mcp-server"", ""gpu"", ""radeon"", ""ryzen"", ""vulkan"", ""ai"", ""genai""]",13122,True
+drbubble,arduinoos,User,2016-07-01T16:24:06Z,2023-08-08T17:12:08Z,NOASSERTION,master,56,2,1,5,[],14852,True
+tambo-ai,tambo,Organization,2024-06-15T17:11:37Z,2025-08-28T19:52:15Z,MIT,main,627,49,44,9,"[""ai"", ""js"", ""react"", ""reactjs"", ""ui"", ""ui-components"", ""agent"", ""agents"", ""assistant"", ""assistant-chat-bots""]",8177,True
+pi22by7,in-memoria,User,2025-08-16T06:53:05Z,2025-08-25T12:31:13Z,MIT,main,39,3,0,2,[],9809,False
+inshinrei,halua,User,2025-06-24T14:54:51Z,2025-08-20T19:31:18Z,MIT,main,13,0,1,0,[],326,True
+xrip,pico-286,User,2024-09-16T16:01:14Z,2025-08-28T20:55:41Z,MIT,master,202,10,1,4,"[""286"", ""adlib"", ""cga"", ""cms"", ""emulator"", ""pc"", ""rp2040"", ""rp2350"", ""sound-blaster"", ""tandy"", ""tga"", ""vga""]",22627,True
+clemenselflein,openmower,User,2022-01-26T15:24:24Z,2025-05-09T09:47:29Z,NOASSERTION,main,5786,339,25,232,"[""raspberry-pi"", ""arduino"", ""robot"", ""robotics"", ""gps"", ""ros"", ""rtk"", ""path-finding"", ""robomow"", ""lawn-mower"", ""landscaping""]",9607,True
+usestrix,strix,Organization,2025-08-05T21:28:30Z,2025-08-19T12:08:41Z,Apache-2.0,main,547,53,2,12,[],5052,False
+tiny-tpu-v2,tiny-tpu,Organization,2025-05-19T19:30:00Z,2025-08-21T16:53:52Z,,main,825,57,0,12,[],10767,False
+jgbrwn,retro-computing-stream,User,2025-04-10T01:56:33Z,2025-04-10T02:38:25Z,MIT,main,3,0,0,1,[],0,False
+epicenter-so,epicenter,Organization,2023-03-16T05:55:09Z,2025-08-28T20:53:58Z,MIT,main,2912,170,109,11,"[""svelte"", ""sveltekit"", ""tailwindcss"", ""tauri""]",8082,True
+cvilsmeier,go-sqlite-bench,User,2020-06-14T17:26:50Z,2025-08-23T14:17:06Z,Unlicense,master,500,9,0,6,"[""golang"", ""sqlite""]",8515,False
+gibsonai,memori,Organization,2025-07-24T07:07:51Z,2025-08-26T08:50:27Z,NOASSERTION,main,251,21,14,4,"[""agent"", ""ai"", ""long-short-term-memory"", ""memory"", ""python"", ""rag"", ""aiagent"", ""chatgpt"", ""state-management"", ""memori-ai"", ""memory-management"", ""llm""]",13785,True
+wieslawsoltes,hackernewswatch,User,2025-08-17T22:27:28Z,2025-08-19T11:06:59Z,,main,61,2,0,0,"[""applewatch"", ""hackernews"", ""swift"", ""swiftui"", ""watchos""]",1515,False
+ffmpeg,asm-lessons,Organization,2024-12-28T19:50:54Z,2025-08-08T08:36:11Z,,main,9030,271,21,146,[],939,False
+awslabs,mcp,Organization,2025-03-21T00:39:00Z,2025-08-29T04:03:13Z,Apache-2.0,main,6111,810,189,56,"[""aws"", ""mcp"", ""mcp-client"", ""mcp-clients"", ""mcp-host"", ""mcp-server"", ""mcp-servers"", ""mcp-tools"", ""modelcontextprotocol""]",164910,True
+xyflow,strudel-flow,Organization,2025-07-07T07:47:34Z,2025-08-28T10:21:07Z,AGPL-3.0,main,98,4,5,0,"[""react-flow"", ""strudel""]",6134,False
+tonbo-io,typed-arrow,Organization,2025-08-15T06:13:12Z,2025-08-27T09:59:01Z,Apache-2.0,main,150,4,1,3,"[""arrow"", ""data"", ""rust""]",7819,True
+universal-tool-calling-protocol,python-utcp,Organization,2025-06-24T12:37:35Z,2025-08-27T14:07:32Z,MPL-2.0,main,528,34,11,8,"[""ai"", ""ai-agent"", ""ai-agent-tools"", ""developer-tools"", ""llm"", ""mcp"", ""model-context-protocol"", ""python"", ""utcp""]",17116,False
+mikasjp,busybee,User,2025-08-11T12:26:34Z,2025-08-26T11:00:19Z,Apache-2.0,main,101,1,1,0,[],6048,True
+railsjazz,rails_charts,Organization,2022-04-19T19:20:56Z,2025-08-17T10:29:21Z,MIT,main,326,22,6,4,"[""charts"", ""rails""]",11954,True
+eloqdata,eloqkv,Organization,2025-02-05T08:51:42Z,2025-08-29T04:04:03Z,NOASSERTION,main,395,30,23,9,[],10244,False
+isene,imdb,User,2023-07-01T22:20:35Z,2025-08-19T22:03:56Z,Unlicense,main,71,1,2,2,[],7059,False
+google,mangle,Organization,2022-11-24T13:22:28Z,2025-08-12T13:37:52Z,Apache-2.0,main,1761,79,8,27,[],5448,True
+walterwanderley,sqlite-http-cache,User,2025-08-05T22:54:26Z,2025-08-16T02:46:48Z,Apache-2.0,main,9,0,0,0,[],2215,True
+ngafar,llama-scan,User,2025-06-11T03:16:58Z,2025-08-24T16:57:28Z,MIT,main,624,33,1,1,[],1338,False
+0xatrilla,liquidsky,User,2025-08-16T02:56:52Z,2025-08-29T01:12:03Z,AGPL-3.0,main,26,1,0,0,"[""app"", ""apple"", ""bluesky"", ""ios"", ""iphone"", ""iphone-app"", ""swift"", ""swiftui""]",7134,False
+algolia,hn-search,Organization,2013-11-21T08:27:17Z,2023-11-04T05:44:05Z,NOASSERTION,master,579,73,31,88,[],4154,False
+bgreenwell,doxx,User,2025-08-16T18:48:24Z,2025-08-28T01:41:55Z,MIT,main,2637,55,13,8,"[""cli"", ""docx"", ""msword"", ""render"", ""rust"", ""terminal"", ""tui""]",9293,True
+jgoyd,ios-18.5-bluetooth-privacy-vuln,User,2025-08-17T15:53:16Z,2025-08-17T16:49:23Z,,main,18,0,0,1,[],1695,False
+superilu,dosdevelresources,User,2025-08-16T15:00:26Z,2025-08-28T18:43:41Z,MIT,main,114,5,0,2,"[""ms-dos"", ""retrocomputing"", ""retrodev""]",11461,False
+ahmedhosssam,chatbang,User,2025-05-23T22:12:12Z,2025-08-20T23:51:03Z,MIT,main,154,19,2,0,[],1728,True
+wan-video,wan2.2,Organization,2025-07-28T08:17:01Z,2025-08-26T12:45:50Z,Apache-2.0,main,4582,289,80,25,"[""aigc"", ""video-generation""]",26177,False
+robert-van-engelen,tinylisp,User,2022-07-14T00:10:15Z,2025-08-25T19:58:30Z,BSD-3-Clause,main,1206,65,1,17,"[""lisp"", ""lisp-interpreter"", ""pc-g850"", ""tiny""]",15436,False
+superstarryeyes,lue,User,2025-08-16T14:07:49Z,2025-08-27T11:59:37Z,GPL-3.0,main,384,11,5,1,"[""book"", ""cli"", ""doc"", ""docx"", ""ebook"", ""epub"", ""modular"", ""reader"", ""terminal"", ""text-to-speech"", ""tts"", ""txt"", ""voice"", ""pdf""]",7738,True
+context-labs,uwu,Organization,2025-08-11T01:03:12Z,2025-08-23T20:32:47Z,MIT,main,837,36,5,4,[],10349,False
+h0x0er,ebpf-snippets,User,2025-08-15T12:50:45Z,2025-08-22T07:17:34Z,MIT,main,14,2,0,0,"[""ebpf"", ""ebpf-programs"", ""snippets-collection"", ""vscode-snippets"", ""bpf""]",882,True
+pgautoupgrade,docker-pgautoupgrade,Organization,2023-07-08T09:44:32Z,2025-08-27T07:04:34Z,MIT,main,911,30,13,11,"[""docker"", ""postgres"", ""postgresql"", ""postgresql-database"", ""upgrade""]",8072,False
+clement-tourriere,dbcrust,User,2025-07-18T07:36:38Z,2025-08-27T13:58:10Z,MIT,main,68,1,0,0,[],6050,True
+ebeem,guile-swayer,User,2024-06-15T06:36:19Z,2025-08-20T02:37:16Z,MIT,master,123,7,2,2,"[""guile"", ""scheme"", ""emacs"", ""ipc"", ""sway"", ""wayland""]",16419,True
+hcloud-k8s,terraform-hcloud-kubernetes,Organization,2024-10-23T14:42:55Z,2025-08-28T22:41:17Z,MIT,main,213,17,7,1,"[""hcloud"", ""hetzner"", ""kubernetes"", ""talos"", ""terraform"", ""linux"", ""cloud"", ""k8s"", ""kube""]",45749,True
+wyattjoh,jmap-mcp,User,2025-08-15T17:24:44Z,2025-08-15T18:23:29Z,MIT,main,148,12,0,1,[],6919,False
+vpdotnet,vpnetd-sgx,Organization,2025-08-15T14:17:30Z,2025-08-15T14:38:34Z,NOASSERTION,master,38,1,0,0,[],8845,False
+libgit2,libgit2,Organization,2010-09-10T16:17:48Z,2025-08-11T09:13:31Z,NOASSERTION,main,10101,2507,494,393,"[""libgit2"", ""git"", ""library"", ""dvcs"", ""version-control"", ""hacktoberfest"", ""c""]",22889,True
+dani-garcia,vaultwarden,User,2018-02-17T22:40:20Z,2025-08-27T18:53:56Z,AGPL-3.0,main,48481,2279,25,261,"[""vaultwarden"", ""bitwarden"", ""rust"", ""docker"", ""rocket"", ""bitwarden-rs""]",11097,True
+pghookcom,pghook,Organization,2025-08-10T07:01:16Z,2025-08-22T00:41:24Z,MIT,main,61,1,0,0,[],10495,True
+nvidia,tilus,Organization,2025-08-01T18:56:09Z,2025-08-27T15:21:07Z,Apache-2.0,main,315,7,3,3,"[""cuda"", ""kernel"", ""programming"", ""tile""]",2301,True
