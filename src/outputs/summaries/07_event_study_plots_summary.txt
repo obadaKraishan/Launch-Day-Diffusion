@@ -1,0 +1,9 @@
+Event-study plots summary
+Overall Δstars (mean): 24h=121.1, 48h=188.7, 7d=288.5
+Overall Δstars (median): 24h=39.0, 48h=57.0, 7d=82.0
+Show HN advantage at 48h (mean): 143.3 vs 222.1 (diff=-78.8)
+Figures:
+- outputs/figures/event_curve_overall.png
+- outputs/figures/event_curve_showhn_vs_other.png
+- outputs/figures/event_curve_weekday_vs_weekend.png
+- outputs/figures/event_curve_posthour_bins.png

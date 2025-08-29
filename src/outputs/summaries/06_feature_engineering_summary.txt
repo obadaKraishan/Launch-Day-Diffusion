@@ -1,0 +1,10 @@
+Rows (HN→repo pairs): 138
+Coverage delta_24h:  99.28%
+Coverage delta_48h:  99.28%
+Coverage delta_168h: 99.28%
+delta_24h  stats: mean=121.05, median=39.00, p90=348.20
+delta_48h  stats: mean=188.70, median=57.00, p90=470.80
+delta_168h stats: mean=288.45, median=82.00, p90=658.40
+Show HN rate: 42.03%
+Weekend post rate: 26.81%
+AI topic (any) rate: 22.46%
