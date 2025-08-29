@@ -1,0 +1,14 @@
+Unique repos: 132
+Rows (owner/repo mapped): 138
+Invalid repos (validated & 404/err): 0
+Sample (first 10):
+- elixir-lang/expert [repo] valid=None
+- mcpcat/mcpcat-typescript-sdk [repo] valid=None
+- mi12labs/swiftai [repo] valid=None
+- b0nes164/gpuprefixsums [repo] valid=None
+- forter/trusted-agentic-commerce-protocol [repo] valid=None
+- soulim/bookmarks.txt [repo] valid=None
+- anthropics/claude-code [issues] valid=None
+- polaroi8d/cactoide [repo] valid=None
+- renzorlive/vimmaster [repo] valid=None
+- razetime/efficient-array-programming [repo] valid=None
