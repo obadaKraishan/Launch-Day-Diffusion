@@ -1,0 +1,4 @@
+Repos processed (this run): 132
+Star events fetched (this run): 372316
+Rows appended to timeseries (this run): 163209
+Timeseries CSV: data/processed/stars_timeseries.csv
