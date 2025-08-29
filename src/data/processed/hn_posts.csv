@@ -1,0 +1,3 @@
+hn_id,time_utc,title,url,resolved_url,score,descendants,is_show_hn,author
+45052200,2025-08-28T13:51:51+00:00,Show HN: SwiftAI – open-source library to easily build LLM features on iOS/macOS,https://github.com/mi12labs/SwiftAI,https://github.com/mi12labs/SwiftAI,60,13,True,mi12-root
+45047572,2025-08-28T02:12:23+00:00,Bookmarks.txt is a concept of keeping URLs in plain text files,https://github.com/soulim/bookmarks.txt,https://github.com/soulim/bookmarks.txt,171,146,False,secwang

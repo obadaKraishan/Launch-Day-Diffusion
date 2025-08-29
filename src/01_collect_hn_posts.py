@@ -5,7 +5,7 @@ Fetch Hacker News stories linking to GitHub, within a date range.
 Saves: JSONL (raw), CSV (tidy), TXT (summary)
 Default method: Algolia HN Search API (no key). Optionally: Firebase scan.
 """
-import argparse, os, sys, re, json, time, math, csv
+import argparse, os, sys, re, json
 from datetime import datetime, timezone
 from urllib.parse import urlparse
 import requests
@@ -13,19 +13,33 @@ import pandas as pd
 from dateutil import parser as dateparser
 
 DEFAULT_QUERY = "ai,llm,gpt,rag,transformers,diffusion"
-
 ALGOLIA_URL = "https://hn.algolia.com/api/v1/search_by_date"
+
+SHOW_HN_RE = re.compile(r"^\s*show\s+hn\b", re.IGNORECASE)
 
 def parse_args():
     ap = argparse.ArgumentParser(description="Collect HN posts linking to GitHub for AI/LLM tools.")
-    ap.add_argument("--start", type=str, default=os.environ.get("HN_START","2024-01-01"), help="Start date (YYYY-MM-DD)")
-    ap.add_argument("--end", type=str, default=os.environ.get("HN_END", datetime.utcnow().date().isoformat()), help="End date (YYYY-MM-DD)")
-    ap.add_argument("--min_score", type=int, default=int(os.environ.get("HN_MIN_SCORE", 50)), help="Minimum HN points to keep")
-    ap.add_argument("--query", type=str, default=os.environ.get("HN_QUERY", DEFAULT_QUERY), help="Comma-separated keywords to match (title or URL)")
-    ap.add_argument("--only_show_hn", action="store_true", help="Keep only 'Show HN' posts")
-    ap.add_argument("--resolve_urls", action="store_true", help="Resolve redirects to get final URL (slower)")
-    ap.add_argument("--method", choices=["algolia","firebase"], default=os.environ.get("HN_METHOD","algolia"), help="API method to use")
-    ap.add_argument("--out_prefix", type=str, default="", help="Optional prefix for output filenames")
+    ap.add_argument("--start", type=str,
+                    default=os.environ.get("HN_START", "2024-01-01"),
+                    help="Start date (YYYY-MM-DD)")
+    ap.add_argument("--end", type=str,
+                    default=os.environ.get("HN_END", datetime.now(timezone.utc).date().isoformat()),
+                    help="End date (YYYY-MM-DD)")
+    ap.add_argument("--min_score", type=int,
+                    default=int(os.environ.get("HN_MIN_SCORE", 50)),
+                    help="Minimum HN points to keep")
+    ap.add_argument("--query", type=str,
+                    default=os.environ.get("HN_QUERY", DEFAULT_QUERY),
+                    help="Comma-separated keywords to match (title or URL)")
+    ap.add_argument("--only_show_hn", action="store_true",
+                    help="Keep only 'Show HN' posts")
+    ap.add_argument("--resolve_urls", action="store_true",
+                    help="Resolve redirects to get final URL (slower)")
+    ap.add_argument("--method", choices=["algolia","firebase"],
+                    default=os.environ.get("HN_METHOD","algolia"),
+                    help="API method to use")
+    ap.add_argument("--out_prefix", type=str, default="",
+                    help="Optional prefix for output filenames")
     return ap.parse_args()
 
 def ensure_dirs():
@@ -82,8 +96,7 @@ def collect_algolia(start_iso, end_iso, min_score, keywords, only_show_hn, resol
         for h in hits:
             url = h.get("url")
             title = h.get("title") or ""
-            is_show_hn = title.lower().startsWith("show hn") if hasattr(title, "lower") else False
-            is_show_hn = title.lower().startswith("show hn")
+            is_show_hn = bool(SHOW_HN_RE.match(title))
             if only_show_hn and not is_show_hn:
                 continue
             if not is_github_url(url):
@@ -118,8 +131,7 @@ def collect_algolia(start_iso, end_iso, min_score, keywords, only_show_hn, resol
     return kept, hits_total
 
 def collect_firebase(start_iso, end_iso, min_score, keywords, only_show_hn, resolve_urls):
-    # Minimal fallback using Algolia again (Firebase scanning by id/time is slow).
-    # We reuse Algolia to keep this script fast and reliable.
+    # Fallback uses Algolia to keep runtime fast and simple.
     return collect_algolia(start_iso, end_iso, min_score, keywords, only_show_hn, resolve_urls)
 
 def main():

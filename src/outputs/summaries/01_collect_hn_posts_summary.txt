@@ -1,0 +1,5 @@
+Total HN hits scanned (Algolia pages summed): 1000
+Kept (github.com & filters): 2
+Top 10 by score:
+-  171 : Bookmarks.txt is a concept of keeping URLs in plain text files ... (https://github.com/soulim/bookmarks.txt)
+-   60 : Show HN: SwiftAI – open-source library to easily build LLM features on iOS/macOS ... (https://github.com/mi12labs/SwiftAI)
