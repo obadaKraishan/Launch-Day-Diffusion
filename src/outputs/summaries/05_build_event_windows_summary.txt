@@ -1,0 +1,5 @@
+Total HN→repo pairs: 138
+Pairs with valid timeseries: 137
+Pairs with any post-event stars (t_day>=0): 133
+Window: [-7 .. +7] days
+Output CSV: data/processed/event_windows.csv

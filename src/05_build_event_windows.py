@@ -2,23 +2,6 @@
 """
 05_build_event_windows.py
 Align GitHub star time series to Hacker News post time and build +/- windowed daily event panels.
-
-Inputs:
-  - data/processed/hn_posts.csv                   (hn_id, time_utc, title, url, resolved_url, score, descendants, is_show_hn, author)
-  - data/processed/github_repos_from_hn.csv       (hn_id, owner, repo, ...)
-  - data/processed/stars_timeseries.csv           (owner, repo, ts_hour, stars_hourly, stars_cum)
-
-Outputs:
-  - data/processed/event_windows.csv              (hn_id, owner, repo, post_time_utc, t_day, stars_day, stars_cum_since_launch, stars_cum_abs)
-  - outputs/summaries/05_build_event_windows_summary.txt
-
-Usage:
-  python src/05_build_event_windows.py \
-    --hn_csv data/processed/hn_posts.csv \
-    --map_csv data/processed/github_repos_from_hn.csv \
-    --stars_csv data/processed/stars_timeseries.csv \
-    --out_csv data/processed/event_windows.csv \
-    --window_days 7
 """
 import os, sys, argparse
 from datetime import datetime, timedelta, timezone
@@ -37,7 +20,6 @@ def to_utc_timestamp(s):
         return None
     try:
         dt = pd.to_datetime(s, utc=True)
-        # dt is Timestamp(tz=UTC)
         return dt.to_pydatetime()
     except Exception:
         return None
@@ -47,10 +29,10 @@ def merge_asof_last(df_ts, when_dt):
     Given a repo timeseries df (columns: ts_hour [datetime64[ns, UTC]], stars_cum),
     return the last known 'stars_cum' at or before 'when_dt'. If none, return 0.
     """
-    if df_ts.empty:
-        return 0
-    tmp = pd.DataFrame({"when": [pd.Timestamp(when_dt, tz="UTC")]})
-    # left_asof on ts_hour <= when
+    if df_ts.empty or when_dt is None:
+        return 0.0
+    # when_dt is already timezone-aware → do NOT pass tz= again
+    tmp = pd.DataFrame({"when": [pd.Timestamp(when_dt)]})
     joined = pd.merge_asof(
         tmp.sort_values("when"),
         df_ts.sort_values("ts_hour")[["ts_hour", "stars_cum"]],
@@ -71,9 +53,12 @@ def build_event_panel_for_pair(repo_ts, post_dt_utc, window_days):
     if repo_ts.empty or post_dt_utc is None:
         return pd.DataFrame(columns=["t_day","stars_day","stars_cum_since_launch","stars_cum_abs"])
 
-    # compute relative day index for each hourly record
+    # Ensure timezone-aware ts_hour
+    if repo_ts["ts_hour"].dt.tz is None:
+        repo_ts["ts_hour"] = repo_ts["ts_hour"].dt.tz_localize("UTC")
+
     # t_day = floor((ts_hour - post_time) / 24h)
-    rel_hours = (repo_ts["ts_hour"] - pd.Timestamp(post_dt_utc, tz="UTC")) / pd.Timedelta(hours=1)
+    rel_hours = (repo_ts["ts_hour"] - pd.Timestamp(post_dt_utc)) / pd.Timedelta(hours=1)
     repo_ts = repo_ts.assign(t_day=np.floor(rel_hours / 24.0).astype(int))
 
     # keep only rows inside the window +/- window_days
@@ -89,11 +74,10 @@ def build_event_panel_for_pair(repo_ts, post_dt_utc, window_days):
         .reset_index()
     )
 
-    # baseline: cumulative just BEFORE t=0 (i.e., at last ts_hour < post_time)
+    # baseline: cumulative just BEFORE t=0 (i.e., last ts_hour < post_time)
     baseline_cum = merge_asof_last(repo_ts[["ts_hour","stars_cum"]], post_dt_utc - timedelta(seconds=1))
 
     # cumulative ABS at end of each relative day:
-    # day_end = post_time + (t_day+1) days (exclusive end); we query last known stars_cum <= day_end
     day_ends = [post_dt_utc + timedelta(days=d + 1) for d in range(-window_days, window_days + 1)]
     end_vals = []
     for de in day_ends:
@@ -124,7 +108,7 @@ def main():
     ensure_dirs()
 
     # Load inputs
-    if not os.path.exists(args.hn_csv) or not os.path.exists(args.map_csv) or not os.path.exists(args.stars_csv):
+    if not (os.path.exists(args.hn_csv) and os.path.exists(args.map_csv) and os.path.exists(args.stars_csv)):
         print("Missing one or more inputs. Check --hn_csv, --map_csv, --stars_csv.", file=sys.stderr)
         sys.exit(1)
 
@@ -136,31 +120,24 @@ def main():
     hn["post_time_utc"] = hn["time_utc"].apply(to_utc_timestamp)
     ts["ts_hour"] = pd.to_datetime(ts["ts_hour"], utc=True)
 
-    # lower owner/repo
+    # normalize owner/repo to lowercase
     if "owner" in mp.columns: mp["owner"] = mp["owner"].astype(str).str.lower().str.strip()
     if "repo"  in mp.columns: mp["repo"]  = mp["repo"].astype(str).str.lower().str.strip()
     if "owner" in ts.columns: ts["owner"] = ts["owner"].astype(str).str.lower().str.strip()
     if "repo"  in ts.columns: ts["repo"]  = ts["repo"].astype(str).str.lower().str.strip()
 
-    # Join mapping → HN times
-    # Multiple HN posts may map to the same repo; we keep each (hn_id, owner, repo) pair
-    mp2 = mp[["hn_id","owner","repo"]].dropna()
-    mp2 = mp2.drop_duplicates(subset=["hn_id","owner","repo"])
+    # Join mapping → HN times (keep each (hn_id, owner, repo) pair)
+    mp2 = mp[["hn_id","owner","repo"]].dropna().drop_duplicates()
     merged = mp2.merge(hn[["hn_id","post_time_utc"]], on="hn_id", how="left")
 
-    # Prepare output collector
     out_rows = []
     have_ts_pairs = set((ts["owner"] + "/" + ts["repo"]).unique())
 
-    processed_pairs = 0
-    with_ts = 0
-
-    # Process each HN→repo pair
     for hn_id, owner, repo, post_time in merged[["hn_id","owner","repo","post_time_utc"]].itertuples(index=False):
-        processed_pairs += 1
+        if pd.isna(post_time):
+            continue
         key = f"{owner}/{repo}"
-        if key not in have_ts_pairs or pd.isna(post_time):
-            # no star timeseries or missing post time; skip (but could log)
+        if key not in have_ts_pairs:
             continue
 
         sub = ts[(ts["owner"] == owner) & (ts["repo"] == repo)][["ts_hour","stars_hourly","stars_cum"]].sort_values("ts_hour")
@@ -168,12 +145,10 @@ def main():
         if panel.empty:
             continue
 
-        with_ts += 1
         panel.insert(0, "repo", repo)
         panel.insert(0, "owner", owner)
-        panel.insert(0, "post_time_utc", post_time.isoformat())
+        panel.insert(0, "post_time_utc", pd.Timestamp(post_time).isoformat())
         panel.insert(0, "hn_id", hn_id)
-
         out_rows.append(panel)
 
     if out_rows:
@@ -181,13 +156,11 @@ def main():
     else:
         out_df = pd.DataFrame(columns=["hn_id","post_time_utc","owner","repo","t_day","stars_day","stars_cum_since_launch","stars_cum_abs"])
 
-    # Save
     out_df.to_csv(args.out_csv, index=False)
 
     # Summary
     n_pairs_total = len(merged)
     n_pairs_kept = out_df[["hn_id","owner","repo"]].drop_duplicates().shape[0] if not out_df.empty else 0
-    # crude coverage: number of panels containing any post-event stars (t_day>=0)
     post_mask = (out_df["t_day"] >= 0) if not out_df.empty else pd.Series([], dtype=bool)
     n_pairs_with_poststars = out_df.loc[post_mask].groupby(["hn_id","owner","repo"])["stars_day"].sum()
     n_pairs_with_poststars = (n_pairs_with_poststars > 0).sum() if not out_df.empty else 0
