@@ -1,0 +1,4 @@
+formula,coef,se,pval,n,mean_treat1,mean_treat0,effect
+delta_48h ~ is_show_hn + baseline_stars + hn_score + repo_age_days + title_len + is_weekend_post + C(post_hour_bin) + C(post_weekday),-119.24015651630097,138.2864379453604,0.3885393167139437,137,143.27586206896552,222.0506329113924,ShowHN_vs_Other
+delta_48h ~ is_weekend_post + baseline_stars + hn_score + repo_age_days + title_len + C(post_hour_bin) + C(post_weekday),10.197755899524577,43.20915510624443,0.8134255712868803,137,201.21621621621622,184.07,Weekend_vs_Weekday
+group means by post_hour_bin,200.25708061002177,,,137,311.2962962962963,111.03921568627452,PostHour_bins_unadjusted

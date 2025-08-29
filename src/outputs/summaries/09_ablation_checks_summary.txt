@@ -1,0 +1,11 @@
+Ablations on target=delta_48h  (allow_launch_day=False, strict_prelaunch=False)
+
+ShowHN_vs_Other: coef=-119.24 (SE=138.29, p=0.3885, n=137)
+    Group means (unadjusted): treat= 143.28 vs control= 222.05
+    Formula: delta_48h ~ is_show_hn + baseline_stars + hn_score + repo_age_days + title_len + is_weekend_post + C(post_hour_bin) + C(post_weekday)
+
+Weekend_vs_Weekday: coef=10.20 (SE=43.21, p=0.8134, n=137)
+    Group means (unadjusted): treat= 201.22 vs control= 184.07
+    Formula: delta_48h ~ is_weekend_post + baseline_stars + hn_score + repo_age_days + title_len + C(post_hour_bin) + C(post_weekday)
+
+PostHour_bins_unadjusted: unadjusted max-min across bins = 200.26 (n=137)
