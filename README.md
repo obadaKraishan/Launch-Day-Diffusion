@@ -168,7 +168,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📧 Contact
 
 Obada Kraishan - [omareikr@ttu.edu](mailto:omareikr@ttu.edu)  
-ORCID: [0009-0007-7180-8620](https://orcid.org/0009-0007-7180-8620)
+ORCID: [0009-0007-7180-8620](https://orcid.org/0009-0007-7180-8620)  
 Website: https://okraishan.com/
 
 ---
