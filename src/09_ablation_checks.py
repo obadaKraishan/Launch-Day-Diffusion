@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 09_ablation_checks.py
 Paper-friendly ablations with robust SEs, avoiding label leakage by default.
@@ -25,6 +24,8 @@ Examples:
 
   # Refit a small GB model without leaky features (reports MAE/RMSE/R2)
   python src/09_ablation_checks.py --fit_small_model
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, argparse
 import numpy as np
@@ -112,7 +113,7 @@ def prep_df(df, target, allow_launch_day=False, strict_prelaunch=False):
 
     # Actually drop any present columns
     for c in drop_cols:
-        col = c if c in d.columns else f"num__{c}"  # handle transformed names from old tables
+        col = c if c in d.columns else f"num__{c}"
         if col in d.columns:
             d = d.drop(columns=[col])
 

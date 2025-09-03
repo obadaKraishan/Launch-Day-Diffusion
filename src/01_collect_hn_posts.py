@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
 """
 01_collect_hn_posts.py
 Fetch Hacker News stories linking to GitHub, within a date range.
 Saves: JSONL (raw), CSV (tidy), TXT (summary)
 Default method: Algolia HN Search API (no key). Optionally: Firebase scan (fallback).
+Author: <OBADA KRAISHAN>
 """
 import argparse, os, re, json
 from datetime import datetime, timezone
@@ -12,7 +12,7 @@ import requests
 import pandas as pd
 from dateutil import parser as dateparser
 
-DEFAULT_QUERY = ""  # we now default to no keyword filter (filter AI later)
+DEFAULT_QUERY = ""
 ALGOLIA_URL = "https://hn.algolia.com/api/v1/search_by_date"
 
 SHOW_HN_RE = re.compile(r"^\s*show\s*hn\b", re.IGNORECASE)
@@ -35,7 +35,7 @@ def parse_args():
     cfg = {}
     if os.path.exists(pre_args.config):
         try:
-            import yaml  # optional; pip install pyyaml
+            import yaml
             with open(pre_args.config, "r", encoding="utf-8") as f:
                 cfg = yaml.safe_load(f) or {}
         except Exception:
@@ -143,7 +143,7 @@ def collect_algolia(start_iso, end_iso, min_score, keywords, only_show_hn, resol
 
     while True:
         params = {
-            "query": algolia_query or "",         # prefilter on Algolia side
+            "query": algolia_query or "",
             "tags": "story",
             "numericFilters": f"created_at_i>={start_epoch},created_at_i<={end_epoch}",
             "hitsPerPage": 100,

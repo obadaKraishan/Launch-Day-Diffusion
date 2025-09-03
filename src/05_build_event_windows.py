@@ -2,6 +2,8 @@
 """
 05_build_event_windows.py
 Align GitHub star time series to Hacker News post time and build +/- windowed daily event panels.
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, argparse
 from datetime import datetime, timedelta, timezone

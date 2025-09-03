@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 10_make_report_txt.py
 Assemble a paper-ready TXT summary from previous pipeline outputs.
@@ -16,6 +15,8 @@ Reads (best-effort; all optional if present):
 
 Writes:
   - outputs/summaries/10_report_draft.txt
+
+Author: <OBADA KRAISHAN>
 """
 import os, re, argparse
 

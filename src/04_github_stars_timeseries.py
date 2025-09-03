@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 04_github_stars_timeseries.py
 Fetch per-user star events with timestamps and build an HOURLY cumulative time series.
@@ -10,6 +9,8 @@ Saves:
 
 Usage:
   python src/04_github_stars_timeseries.py --input_csv data/processed/github_repos_from_hn.csv
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, json, time, argparse, math
 from datetime import datetime, timezone
@@ -48,8 +49,6 @@ def fetch_stargazers(owner: str, repo: str, token: str, out_jsonl: str):
     page = 1
     total = 0
 
-    # resume: if file exists, grab last 'page' saved? Simpler: gather existing count to avoid dup merge later.
-    # We always append, so delete existing file if you want a clean re-run.
     while True:
         url = f"https://api.github.com/repos/{owner}/{repo}/stargazers"
         params = {"per_page": per_page, "page": page}

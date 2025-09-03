@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 03_github_repo_metadata.py
 Enrich GitHub repos with static metadata: owner type, created_at, license, topics,
@@ -9,6 +8,8 @@ Saves:
   - outputs/summaries/03_github_repo_metadata_summary.txt
 Usage:
   python src/03_github_repo_metadata.py --input_csv data/processed/github_repos_from_hn.csv
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, json, time, argparse
 from typing import Tuple, Dict, Any

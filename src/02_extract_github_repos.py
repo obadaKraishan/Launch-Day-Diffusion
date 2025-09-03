@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
 """
 02_extract_github_repos.py
 Parse and validate GitHub owner/repo from HN post URLs.
 Saves: CSV (mapping), TXT (summary)
+Author: <OBADA KRAISHAN>
 """
 import argparse, os, re, sys, csv, time
 import pandas as pd

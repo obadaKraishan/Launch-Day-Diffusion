@@ -1,12 +1,11 @@
-# ICWSM HN→GitHub config
+# config
 start_date: 2023-01-01
 end_date: 2025-08-28
 min_score: 10
-query: ""              # leave empty; we'll filter AI repos later via metadata/README
+query: ""
 only_show_hn: false
 resolve_urls: false    # set to true to follow shorteners (slower)
 method: "algolia"      # or "firebase"
 out_prefix: "allgh23"
 
-# Optional (only used if you tweak 01 script to pass this to Algolia):
 algolia_query: "github.com"
