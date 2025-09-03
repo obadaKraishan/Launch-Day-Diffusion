@@ -5,7 +5,7 @@
 
 A fully reproducible demonstration system that tracks how Hacker News (HN) exposure translates into GitHub star growth for AI and LLM tools. This pipeline analyzes launch-day dynamics and identifies key predictors of viral growth using event study methodology and machine learning.
 
-**Paper**: Presented at ICDM 2025 (IEEE International Conference on Data Mining)  
+**Paper**: Submitted to ICDM 2025 (IEEE International Conference on Data Mining)  
 **Author**: Obada Kraishan, Texas Tech University
 
 ## 🎯 Key Findings
@@ -69,7 +69,7 @@ The system consists of 10 modular scripts that can be run independently or as a 
 ## 📁 Project Structure
 
 ```
-icwsm-hn-github/
+Launch-Day-Diffusion/
 ├── src/                    # Pipeline scripts
 ├── data/
 │   ├── raw/               # Raw API responses (JSONL)
@@ -173,4 +173,4 @@ Website: https://okraishan.com/
 
 ---
 
-**Note**: This is a demonstration system for academic research. The pipeline completes in under 5 minutes on standard hardware and is designed for immediate reproducibility.
+**Note**: This is a demonstration system submitted to IEEE ICDM 2025 Demo Track. The pipeline is designed to be immediately reproducible (runs in under 5 minutes on standard hardware) and extensible for both academic research and practical applications. We encourage you to build upon this foundation for your own research or tools!
