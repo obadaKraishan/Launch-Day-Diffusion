@@ -103,7 +103,8 @@ icwsm-hn-github/
 ## 📈 Sample Results
 
 ### Event Study Curves
-![Event Study](outputs/figures/event_curve_overall.png)
+<img width="1170" height="750" alt="event_curve_posthour_bins" src="https://github.com/user-attachments/assets/77fe31d9-5f61-4cf3-98ba-c01e6f295d32" />
+
 
 ### Model Performance
 | Model | Horizon | MAE | RMSE | R² |
