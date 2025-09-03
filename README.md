@@ -126,19 +126,6 @@ min_score: 10
 query: "llm,gpt,rag,transformers,langchain"
 ```
 
-## 📝 Citation
-
-If you use this code or data in your research, please cite:
-
-```bibtex
-@inproceedings{kraishan2025launch,
-  title={Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools},
-  author={Kraishan, Obada},
-  booktitle={Proceedings of the IEEE International Conference on Data Mining (ICDM)},
-  year={2025},
-  organization={IEEE}
-}
-```
 
 ## 🤝 Contributing
 
