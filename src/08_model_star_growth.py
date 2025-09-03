@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 08_model_star_growth.py
 Model short-term GitHub star growth after HN launch.
@@ -10,6 +9,8 @@ Outputs:
   - outputs/summaries/08_model_star_growth_summary.txt
   - outputs/figures/08_enet_coefficients_*.png
   - outputs/figures/08_gb_permutation_importance_*.png
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, argparse
 import numpy as np
@@ -166,8 +167,8 @@ def model_one_target(df, target_col, random_state=42):
     m_gbr  = metrics(y_test, pred_gbr)
 
     # ===== Feature names (after preprocessing) =====
-    pre_fitted = enet.named_steps["pre"]          # same fitted preprocessor as in gbr
-    feat_names = safe_feature_names(pre_fitted)   # handles sklearn version differences
+    pre_fitted = enet.named_steps["pre"]
+    feat_names = safe_feature_names(pre_fitted)
 
     # ===== Elastic Net coefficients (already on transformed features) =====
     coef = pd.Series(enet.named_steps["mdl"].coef_, index=feat_names)

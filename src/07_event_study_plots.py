@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 07_event_study_plots.py
 Create descriptive event-study figures from the aligned panels.
@@ -13,6 +12,8 @@ Outputs:
   - outputs/figures/event_curve_weekday_vs_weekend.png
   - outputs/figures/event_curve_posthour_bins.png
   - outputs/summaries/07_event_study_plots_summary.txt
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, argparse
 import numpy as np

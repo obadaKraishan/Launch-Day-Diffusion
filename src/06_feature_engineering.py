@@ -36,6 +36,8 @@ Usage:
     --meta_csv data/processed/github_repos_metadata.csv \
     --events_csv data/processed/event_windows.csv \
     --out_csv data/processed/features_labels.csv
+
+Author: <OBADA KRAISHAN>
 """
 import os, sys, re, json, argparse
 from datetime import datetime, timezone
