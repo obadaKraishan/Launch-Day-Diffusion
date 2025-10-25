@@ -1,9 +1,11 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17442082.svg)](https://doi.org/10.5281/zenodo.17442082)
 # Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+**Preprint:** https://doi.org/10.5281/zenodo.17442082  
+© 2025 Obada Kraishan. Text/figures: CC BY 4.0. Code: MIT.
 
-A fully reproducible demonstration system that tracks how Hacker News (HN) exposure translates into GitHub star growth for AI and LLM tools. This pipeline analyzes launch-day dynamics and identifies key predictors of viral growth using event study methodology and machine learning.
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Author**: Obada Kraishan, Texas Tech University
 
