@@ -132,7 +132,6 @@ If you use this work, please cite the preprint:
 Kraishan, O. (2025). *Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools*. Zenodo. https://doi.org/10.5281/zenodo.17442082
 
 **BibTeX**
-```bibtex
 @misc{kraishan2025launchday,
   title        = {Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools},
   author       = {Kraishan, Obada},
