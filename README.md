@@ -150,7 +150,6 @@ Contributions are welcome! Please feel free to submit a Pull Request. Areas for 
 - Real-time monitoring capabilities
 
 
-```markdown
 ## 📄 License
 - **Code:** MIT (see [LICENSE](LICENSE)).
 - **Text, figures, and the preprint PDF:** Creative Commons **CC BY 4.0**.
