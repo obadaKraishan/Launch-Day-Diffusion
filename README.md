@@ -124,6 +124,23 @@ min_score: 10
 query: "llm,gpt,rag,transformers,langchain"
 ```
 
+## 📚 Cite
+
+If you use this work, please cite the preprint:
+
+**APA**
+Kraishan, O. (2025). *Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools*. Zenodo. https://doi.org/10.5281/zenodo.17442082
+
+**BibTeX**
+```bibtex
+@misc{kraishan2025launchday,
+  title        = {Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools},
+  author       = {Kraishan, Obada},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17442082},
+  url          = {https://doi.org/10.5281/zenodo.17442082}
+}
 
 ## 🤝 Contributing
 
@@ -133,9 +150,12 @@ Contributions are welcome! Please feel free to submit a Pull Request. Areas for 
 - Enhanced feature engineering
 - Real-time monitoring capabilities
 
-## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```markdown
+## 📄 License
+- **Code:** MIT (see [LICENSE](LICENSE)).
+- **Text, figures, and the preprint PDF:** Creative Commons **CC BY 4.0**.
+
 
 ## 🙏 Acknowledgments
 
