@@ -1,7 +1,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2511.04453-b31b1b.svg)](https://arxiv.org/abs/2511.04453)
 # Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools
 
-**Preprint:** https://doi.org/10.5281/zenodo.17442082  
+**Preprint:** https://doi.org/10.48550/arXiv.2511.04453  
 © 2025 Obada Kraishan. Text/figures: CC BY 4.0. Code: MIT.
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
