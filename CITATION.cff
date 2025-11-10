@@ -1,13 +1,19 @@
 cff-version: 1.2.0
 title: "Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools"
-message: "If you use this work, please cite the Zenodo preprint."
 authors:
   - family-names: Kraishan
     given-names: Obada
-    affiliation: Texas Tech University
-    orcid: "https://orcid.org/0009-0007-7180-8620"
-repository-code: "https://github.com/obadaKraishan/Launch-Day-Diffusion"
-license: MIT
-doi: 10.5281/zenodo.17442082
-version: 1.0.0
-date-released: 2025-10-25
+identifiers:
+  - type: url
+    value: https://arxiv.org/abs/2511.04453
+preferred-citation:
+  type: article
+  title: "Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools"
+  authors:
+    - family-names: Kraishan
+      given-names: Obada
+  year: 2025
+  journal: "arXiv"
+  notes: "arXiv:2511.04453"
+  urls:
+    - value: https://arxiv.org/abs/2511.04453
