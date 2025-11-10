@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17442082.svg)](https://doi.org/10.5281/zenodo.17442082)
+[![arXiv](https://img.shields.io/badge/arXiv-2511.04453-b31b1b.svg)](https://arxiv.org/abs/2511.04453)
 # Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools
 
 **Preprint:** https://doi.org/10.5281/zenodo.17442082  
@@ -129,17 +129,21 @@ query: "llm,gpt,rag,transformers,langchain"
 If you use this work, please cite the preprint:
 
 **APA**
-Kraishan, O. (2025). *Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools*. Zenodo. https://doi.org/10.5281/zenodo.17442082
+Kraishan, O. (2025). Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools. arXiv preprint arXiv:2511.04453. https://arxiv.org/abs/2511.04453
+
 
 **BibTeX**
 @misc{kraishan2025launchday,
-  title        = {Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools},
-  author       = {Kraishan, Obada},
-  year         = {2025},
-  publisher    = {Zenodo},
-  doi          = {10.5281/zenodo.17442082},
-  url          = {https://doi.org/10.5281/zenodo.17442082}
+  title         = {Launch-Day Diffusion: Tracking Hacker News Impact on GitHub Stars for AI Tools},
+  author        = {Kraishan, Obada},
+  year          = {2025},
+  eprint        = {2511.04453},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SI},
+  url           = {https://arxiv.org/abs/2511.04453},
+  note          = {arXiv preprint}
 }
+
 
 ## 🤝 Contributing
 
@@ -175,5 +179,3 @@ ORCID: [0009-0007-7180-8620](https://orcid.org/0009-0007-7180-8620)
 Website: https://okraishan.com/
 
 ---
-
-**Note**: This is a demonstration system submitted to IEEE ICDM 2025 Demo Track. The pipeline is designed to be immediately reproducible (runs in under 5 minutes on standard hardware) and extensible for both academic research and practical applications. We encourage you to build upon this foundation for your own research or tools!
